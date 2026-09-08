@@ -1,0 +1,42 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFrameworks>net9.0-android;net9.0-ios</TargetFrameworks>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.Extensions.Caching.Memory" />
+        <PackageReference Include="Microsoft.Extensions.Configuration" />
+        <PackageReference Include="Microsoft.Extensions.Http" />
+        <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" />
+        <PackageReference Include="Newtonsoft.Json" />
+        <PackageReference Include="Microsoft.Data.Sqlite" />
+        <PackageReference Include="SkiaSharp" />
+        <PackageReference Include="System.IdentityModel.Tokens.Jwt" />
+        <PackageReference Include="SQLitePCLRaw.bundle_green" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Vamoriq.Models\Vamoriq.Models.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <EmbeddedResource Include="Data\missions_newcity.json" />
+        <EmbeddedResource Include="Data\missions_newcity.ru.json" LogicalName="Vamoriq.Services.Data.missions_newcity.ru.json" />
+        <EmbeddedResource Include="Data\missions_newcity.it.json" LogicalName="Vamoriq.Services.Data.missions_newcity.it.json" />
+        <EmbeddedResource Include="Data\missions_newcity.de.json" LogicalName="Vamoriq.Services.Data.missions_newcity.de.json" />
+        <EmbeddedResource Include="Data\missions_newcity.es.json" LogicalName="Vamoriq.Services.Data.missions_newcity.es.json" />
+        <EmbeddedResource Include="Data\missions_newcity.fr.json" LogicalName="Vamoriq.Services.Data.missions_newcity.fr.json" />
+        <EmbeddedResource Include="Data\missions_newcity.pl.json" LogicalName="Vamoriq.Services.Data.missions_newcity.pl.json" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Polly" />
+        <PackageReference Include="Plugin.InAppBilling" />
+    </ItemGroup>
+
+
+
+</Project>

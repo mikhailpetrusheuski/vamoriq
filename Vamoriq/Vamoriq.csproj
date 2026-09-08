@@ -1,0 +1,112 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFrameworks>net9.0-android;net9.0-ios</TargetFrameworks>
+
+        <OutputType>Exe</OutputType>
+        <RootNamespace>Vamoriq</RootNamespace>
+        <UseMaui>true</UseMaui>
+        <SingleProject>true</SingleProject>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RestoreAllFrameworks>true</RestoreAllFrameworks>
+
+        <ApplicationTitle>Vamoriq</ApplicationTitle>
+
+        <ApplicationId>com.vamoriq.app</ApplicationId>
+
+        <ApplicationDisplayVersion>0.1</ApplicationDisplayVersion>
+        <ApplicationVersion>1</ApplicationVersion>
+
+        <WindowsPackageType>None</WindowsPackageType>
+
+        <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">15.0</SupportedOSPlatformVersion>
+        <CodesignEntitlements Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">Platforms/iOS/Entitlements.plist</CodesignEntitlements>
+        <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'maccatalyst'">15.0</SupportedOSPlatformVersion>
+        <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">21.0</SupportedOSPlatformVersion>
+        <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</SupportedOSPlatformVersion>
+        <TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
+        <SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(TargetFramework)'=='net9.0-ios'">
+        <ApplicationId>com.vamoriq.app</ApplicationId>
+        <IPhoneBundleIdentifier>com.vamoriq.app</IPhoneBundleIdentifier>
+        <ProvisioningType>manual</ProvisioningType>
+        <ApplicationTitle>Vamoriq</ApplicationTitle>
+        <CodesignKey>Apple Distribution: Your Name (TEAMID0000)</CodesignKey>
+        <CodesignProvision>your-provisioning-profile-name</CodesignProvision>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <MauiIcon Include="Resources\AppIcon\appicon.png" ForegroundFile="Resources\AppIcon\appiconfg.png" Color="#1A1A2E" Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) != 'ios'" />
+        <MauiAsset Include="Platforms\iOS\Assets.xcassets\**\*.*" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'" />
+
+        <MauiSplashScreen Include="Resources\Splash\splash.png" Color="#000000" BaseSize="512,512" />
+
+        <MauiImage Include="Resources\Images\*" />
+
+        <MauiFont Include="Resources\Fonts\*" />
+
+        <MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="CommunityToolkit.Maui" />
+        <PackageReference Include="CommunityToolkit.Mvvm" />
+        <PackageReference Include="Microsoft.Maui.Controls" />
+        <PackageReference Include="Microsoft.Maui.Controls.Compatibility" />
+        <PackageReference Include="Microsoft.Extensions.Logging.Debug" />
+        <PackageReference Include="Microsoft.Extensions.Logging.Console" />
+        <PackageReference Include="Microsoft.Extensions.Configuration" />
+        <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" />
+        <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" />
+        <PackageReference Include="Microsoft.Extensions.Configuration.Json" />
+        <PackageReference Include="Microsoft.Extensions.Http.Polly" />
+        <PackageReference Include="Plugin.InAppBilling" />
+        <PackageReference Include="Polly.Contrib.WaitAndRetry" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\Vamoriq.Core\Vamoriq.Core.csproj" />
+        <ProjectReference Include="..\Vamoriq.Models\Vamoriq.Models.csproj" />
+        <ProjectReference Include="..\Vamoriq.Services\Vamoriq.Services.csproj" />
+    </ItemGroup>
+
+
+    <Target Name="GenerateBuildInfo" BeforeTargets="CoreCompile">
+        <PropertyGroup>
+            <BuildInfoFile>$(IntermediateOutputPath)BuildInfo.g.cs</BuildInfoFile>
+        </PropertyGroup>
+        <ItemGroup>
+            <BuildInfoLines Include="Line1">
+                <Text>namespace Vamoriq;</Text>
+            </BuildInfoLines>
+            <BuildInfoLines Include="Line2">
+                <Text></Text>
+            </BuildInfoLines>
+            <BuildInfoLines Include="Line3">
+                <Text>internal static class BuildInfo</Text>
+            </BuildInfoLines>
+            <BuildInfoLines Include="Line4">
+                <Text>{</Text>
+            </BuildInfoLines>
+            <BuildInfoLines Include="Line5">
+                <Text>    internal const string ApplicationDisplayVersion = "$(ApplicationDisplayVersion)";</Text>
+            </BuildInfoLines>
+            <BuildInfoLines Include="Line6">
+                <Text>    internal const string ApplicationVersion = "$(ApplicationVersion)";</Text>
+            </BuildInfoLines>
+            <BuildInfoLines Include="Line7">
+                <Text>}</Text>
+            </BuildInfoLines>
+        </ItemGroup>
+        <WriteLinesToFile File="$(BuildInfoFile)" Lines="@(BuildInfoLines->'%(Text)')" Overwrite="true" />
+        <ItemGroup>
+            <Compile Include="$(BuildInfoFile)">
+                <Link>BuildInfo.g.cs</Link>
+            </Compile>
+        </ItemGroup>
+    </Target>
+
+</Project>

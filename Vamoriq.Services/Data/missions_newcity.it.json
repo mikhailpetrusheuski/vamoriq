@@ -1,0 +1,362 @@
+{
+  "nc_social_001": {
+    "title": "Chiacchierata al bar",
+    "description": "Entra in un bar del quartiere e scambia due parole — ordina qualcosa di nuovo, chiedi al barista cosa consiglia, o fai un complimento a qualcuno per la sua scelta. Anche due minuti di conversazione rendono un posto più familiare.",
+    "instructions": [
+      "Scegli un bar raggiungibile a piedi che ti ispira.",
+      "Ordina qualcosa e siediti al bancone o a un tavolo condiviso.",
+      "Inizia con qualcosa di semplice — chiedi cosa consigliano o cosa va per la maggiore.",
+      "Cerca di scoprire una cosa sul bar o sulla persona con cui hai parlato.",
+      "Ringrazia prima di andartene."
+    ],
+    "proofSuggestion": "Una foto della tua bevanda al bar, oppure condividi una cosa che hai scoperto."
+  },
+  "nc_explore_001": {
+    "title": "Alla scoperta del mercato di quartiere",
+    "description": "Trova un negozietto o un mercato vicino a te e compra qualcosa che non hai mai provato. Chiedi al venditore da dove viene, come si usa. I mercati sono il cuore pulsante di ogni quartiere.",
+    "instructions": [
+      "Cerca un mercato locale o un piccolo negozio nelle vicinanze.",
+      "Curiosa senza fretta — nota cosa c'è di particolare o diverso.",
+      "Scegli un prodotto nuovo per te o che sembra piacere a chi è del posto.",
+      "Chiedi al venditore qualcosa sul prodotto.",
+      "Goditi la tua scoperta a casa o condividila con qualcuno."
+    ],
+    "proofSuggestion": "Una foto del prodotto che hai comprato, o della bancarella che ti ha colpito."
+  },
+  "nc_comm_001": {
+    "title": "Chiedi un consiglio",
+    "description": "Chiedi a un passante o a un negoziante qual è il loro posto preferito dove mangiare in zona. Alla gente piace condividere i propri posti del cuore, e tu scoprirai angoli che nessuna guida menziona.",
+    "instructions": [
+      "Scegli un luogo rilassato — un negozio, un parco, una via con gente a passeggio.",
+      "Avvicinati a qualcuno che ti sembra disponibile e digli che sei nuovo qui.",
+      "Chiedi qual è il loro posto preferito per mangiare.",
+      "Segnati il nome per non dimenticarlo.",
+      "Ringrazia con un sorriso."
+    ],
+    "proofSuggestion": "Condividi il consiglio che hai ricevuto."
+  },
+  "nc_explore_002": {
+    "title": "Un percorso nuovo",
+    "description": "Prendi una strada diversa nel tuo quartiere — una via che non hai mai fatto, un vicolo che sembra interessante. Le nuove strade rivelano angoli nascosti della città.",
+    "instructions": [
+      "Scegli una direzione in cui non vai di solito e comincia a camminare.",
+      "Tieni spento il navigatore almeno per una parte della passeggiata.",
+      "Nota tre cose che ti sorprendono o ti piacciono.",
+      "Fai una foto della tua scoperta preferita.",
+      "Cammina almeno 15 minuti prima di tornare indietro."
+    ],
+    "proofSuggestion": "Una foto di qualcosa di inaspettato che hai trovato durante la passeggiata."
+  },
+  "nc_social_003": {
+    "title": "Ciao al parco",
+    "description": "Vai al parco e saluta qualcuno — una persona col cane, qualcuno su una panchina, un genitore con i bambini. Un saluto o un sorriso può fare tanto per sentirsi a casa.",
+    "instructions": [
+      "Raggiungi il parco o l'area verde più vicina.",
+      "Fai un giro e osserva chi c'è intorno.",
+      "Saluta, commenta il tempo, o fai un complimento al cane di qualcuno.",
+      "Se la conversazione parte, perfetto. Se no, va bene lo stesso.",
+      "Siediti qualche minuto e goditi lo spazio."
+    ],
+    "proofSuggestion": "Una foto del parco, oppure racconta un piccolo momento della tua visita."
+  },
+  "nc_explore_003": {
+    "title": "Trova il tuo bar del cuore",
+    "description": "Ogni abitante ha il suo bar di fiducia. Oggi prova a trovare il tuo. Entra in un bar che non conosci e vedi se ti senti a tuo agio.",
+    "instructions": [
+      "Cerca un bar indipendente vicino a te.",
+      "Entra, ordina quello che prendi di solito e fai attenzione all'atmosfera.",
+      "Osserva gli abituali, la musica, l'arredamento.",
+      "Se il barista sembra simpatico, chiedigli cosa va per la maggiore.",
+      "Dai un voto all'esperienza — potrebbe diventare il tuo posto?"
+    ],
+    "proofSuggestion": "Una foto della tua bevanda nel nuovo bar, con un giudizio veloce."
+  },
+  "nc_comm_002": {
+    "title": "La storia del negoziante",
+    "description": "Entra in un negozio del quartiere e chiedi al proprietario qualcosa sulla zona. I piccoli commercianti sono spesso la memoria di un posto — conoscono storie che nessuna guida racconta.",
+    "instructions": [
+      "Trova un negozio che sembra essere lì da un po' di tempo.",
+      "Dai un'occhiata con naturalezza, poi avvia una conversazione.",
+      "Chiedi da quanto tempo è lì, o per cosa è conosciuta la zona.",
+      "Ascolta con attenzione — potresti scoprire qualcosa di sorprendente.",
+      "Compra qualcosina come ringraziamento."
+    ],
+    "proofSuggestion": "Una foto del negozio, oppure condividi una storia che hai sentito."
+  },
+  "nc_explore_004": {
+    "title": "Giro in libreria o galleria",
+    "description": "Trova una libreria, una galleria o uno spazio culturale e prenditi del tempo per curiosare. Questi posti attirano persone interessanti e rivelano molto sull'anima di una città.",
+    "instructions": [
+      "Cerca una libreria indipendente, una galleria o uno spazio culturale nelle vicinanze.",
+      "Entra senza programma — curiosa e lasciati guidare.",
+      "Prendi in mano qualcosa che ti attira.",
+      "Se c'è qualcuno dello staff, chiedi cosa consigliano.",
+      "Fermati almeno 15 minuti a goderti l'atmosfera."
+    ],
+    "proofSuggestion": "Una foto di qualcosa che ti ha colpito, o il titolo di un libro o un'opera che ti è piaciuta."
+  },
+  "nc_explore_005": {
+    "title": "Safari di street art",
+    "description": "Vai a caccia di murales, graffiti e arte di strada nella tua zona. È un'ottima scusa per una passeggiata, e vedrai il quartiere con occhi diversi.",
+    "instructions": [
+      "Scegli un quartiere da esplorare a piedi.",
+      "Cerca murales, graffiti, adesivi, installazioni.",
+      "Fotografa almeno tre opere che ti colpiscono.",
+      "Prova a scoprire chi le ha fatte o cosa significano.",
+      "Scegli la tua preferita e racconta perché ti ha colpito."
+    ],
+    "proofSuggestion": "Le foto delle opere di street art che ti sono piaciute di più."
+  },
+  "nc_comm_003": {
+    "title": "Una cartolina dalla tua nuova città",
+    "description": "Scrivi una cartolina — vera o digitale — sulla tua nuova città a qualcuno che è lontano. Mettere in parole la tua esperienza ti aiuta a notare cosa stai già iniziando ad amare.",
+    "instructions": [
+      "Trova una cartolina in un negozio, oppure apri l'app delle note.",
+      "Scrivi della tua nuova città — cosa hai notato, cosa ti ha sorpreso.",
+      "Includi almeno un dettaglio specifico — un odore, un suono, un colore.",
+      "Inviala a un amico o a un familiare.",
+      "Tieni una copia per te come ricordo nel tempo."
+    ],
+    "proofSuggestion": "Una foto della cartolina, oppure condividi un paragrafo di quello che hai scritto."
+  },
+  "nc_fun_008": {
+    "title": "Ordina qualcosa che non sai pronunciare",
+    "description": "Vai in un ristorante o in una panetteria e ordina qualcosa che non hai mai sentito nominare. Indica il menu, chiedi cos'è e assaggia. Alcuni dei piatti migliori nascono da un 'non ho idea di cosa sia'.",
+    "instructions": [
+      "Trova un ristorante, una panetteria o un banco cibo con opzioni che non conosci.",
+      "Scegli qualcosa che non sai pronunciare o che non riconosci.",
+      "Chiedi allo staff cos'è e come si mangia.",
+      "Assaggia con mente aperta.",
+      "Dai un voto — lo riordineresti?"
+    ],
+    "proofSuggestion": "Una foto di quello che hai ordinato e un verdetto in una frase."
+  },
+  "nc_explore_012": {
+    "title": "Trova l'angolo più tranquillo",
+    "description": "Ogni quartiere ha il suo angolo segreto e silenzioso — un cortile, una panchina dietro un palazzo, un angolo di parco che nessuno frequenta. Trova il tuo oggi.",
+    "instructions": [
+      "Cammina per il quartiere con l'obiettivo di trovare il posto più tranquillo.",
+      "Controlla vie secondarie, cortili interni, bordi di parchi, giardini di chiese.",
+      "Quando trovi un posto promettente, siediti per almeno 5 minuti.",
+      "Nota cosa lo rende così calmo — i suoni, la luce, la vista.",
+      "Ricordati dov'è per quando ne avrai bisogno."
+    ],
+    "proofSuggestion": "Una foto dell'angolo tranquillo che hai trovato."
+  },
+  "nc_social_007": {
+    "title": "Fai un complimento a uno sconosciuto",
+    "description": "Fai un complimento sincero a uno sconosciuto oggi. Le scarpe, il giardino, il cane, il sorriso. Bastano tre secondi per rendere la giornata migliore a due persone.",
+    "instructions": [
+      "Fai una breve passeggiata nel tuo quartiere.",
+      "Nota qualcosa di bello in qualcuno che incroci.",
+      "Diglielo — in modo semplice e cordiale.",
+      "Goditi la reazione. La maggior parte delle persone si illumina.",
+      "Nota come ti ha fatto sentire."
+    ],
+    "proofSuggestion": "Racconta cosa hai complimentato e come ha reagito la persona."
+  },
+  "nc_fun_009": {
+    "title": "Tour fotografico della tua via",
+    "description": "Prendi il telefono e crea un mini tour fotografico della tua strada. Fotografa i dettagli davanti a cui passi ogni giorno — portoni, insegne, piante, texture. Inizierai a vedere la tua via con occhi nuovi.",
+    "instructions": [
+      "Esci con la fotocamera del telefono pronta.",
+      "Cammina lentamente lungo la tua strada, fotografando tutto ciò che ti colpisce.",
+      "Scatta almeno 10 foto — concentrati sui dettagli, non solo sugli edifici.",
+      "Scegli le 5 che preferisci.",
+      "Condividi la raccolta con qualcuno o conservala come diario fotografico."
+    ],
+    "proofSuggestion": "Le tue 3 foto preferite del tour."
+  },
+  "nc_explore_013": {
+    "title": "Panchina con vista",
+    "description": "Trova una panchina nella tua città con una bella vista — un fiume, uno skyline, una piazza animata — e siediti lì per 10 minuti a guardare il mondo che passa.",
+    "instructions": [
+      "Cammina fino a un punto con una vista interessante.",
+      "Trova una panchina e siediti. Niente telefono per 10 minuti.",
+      "Osserva le persone, ascolta i suoni, senti l'aria.",
+      "Pensa a una cosa che ti piace di questo posto.",
+      "Fai una foto della vista prima di andartene."
+    ],
+    "proofSuggestion": "Una foto della vista dalla tua panchina."
+  },
+  "nc_explore_006": {
+    "title": "Visita la biblioteca di quartiere",
+    "description": "Le biblioteche sono molto più che libri — sono centri della comunità. Visita la tua, fai un giro e scopri cosa succede. Potresti trovare una bacheca eventi, un gruppo di lettura, o un bibliotecario disponibile.",
+    "instructions": [
+      "Trova la biblioteca pubblica più vicina e vai a visitarla.",
+      "Fai un giro per lo spazio — esplora le diverse sezioni.",
+      "Se non ce l'hai, iscriviti per la tessera della biblioteca.",
+      "Chiedi al bibliotecario se ci sono eventi in programma.",
+      "Prendi un libro o un volantino prima di uscire."
+    ],
+    "proofSuggestion": "Una foto della biblioteca o della tua nuova tessera."
+  },
+  "nc_fun_003": {
+    "title": "Una cucina che non hai mai provato",
+    "description": "Scegli una cucina che non hai mai assaggiato e trova un ristorante che la propone. Chiedi al cameriere di consigliarti il piatto migliore per chi è alla prima volta.",
+    "instructions": [
+      "Pensa a una cucina che non hai mai provato.",
+      "Cerca un ristorante in zona che la propone.",
+      "Chiedi al cameriere di consigliarti il piatto migliore per un principiante.",
+      "Mangia lentamente, assapora i gusti.",
+      "Dai un voto all'esperienza — ci torneresti?"
+    ],
+    "proofSuggestion": "Una foto del piatto che hai provato e una recensione in una frase."
+  },
+  "nc_explore_007": {
+    "title": "Passeggiata al museo o in galleria",
+    "description": "Esplora un museo o una galleria d'arte della zona. Molti hanno ingresso gratuito o ridotto. Passeggia, lasciati catturare da qualcosa e leggine la storia.",
+    "instructions": [
+      "Trova un museo o una galleria vicini — controlla se ci sono giorni a ingresso gratuito.",
+      "Cammina senza fretta tra le sale.",
+      "Leggi in dettaglio di un'opera o di un'esposizione.",
+      "Se l'occasione è giusta, scambia due parole con un altro visitatore.",
+      "Scegli la tua opera preferita e ricorda perché ti ha colpito."
+    ],
+    "proofSuggestion": "Una foto della tua opera o esposizione preferita."
+  },
+  "nc_explore_008": {
+    "title": "Mattinata al mercato contadino",
+    "description": "Visita un mercato contadino e immergiti nei colori e nei sapori. Chiacchiera con un produttore dei suoi prodotti e compra qualcosa di fresco.",
+    "instructions": [
+      "Scopri quando e dove si tiene il mercato contadino più vicino.",
+      "Vai presto per goderti l'atmosfera migliore.",
+      "Fai un giro completo di tutte le bancarelle prima di comprare.",
+      "Chiacchiera con almeno un produttore dei suoi prodotti.",
+      "Compra qualcosa di fresco e goditelo oggi."
+    ],
+    "proofSuggestion": "Una foto del mercato o del tuo bottino."
+  },
+  "nc_comm_005": {
+    "title": "A caccia del posto segreto",
+    "description": "Chiedi a qualcuno del posto di consigliarti un ristorante poco conosciuto. Poi vai a provarlo. I posti migliori passano sempre di bocca in bocca.",
+    "instructions": [
+      "Chiedi a qualcuno del posto un posticino dove mangiare che i turisti non conoscono.",
+      "Segnati nome e indirizzo.",
+      "Vacci finché il consiglio è fresco.",
+      "Ordina quello che ti hanno suggerito, o chiedi la specialità della casa.",
+      "Racconta com'è andata a chi te l'ha consigliato."
+    ],
+    "proofSuggestion": "Una foto del piatto nel posto segreto, e chi te l'ha consigliato."
+  },
+  "nc_explore_010": {
+    "title": "L'edificio più antico del quartiere",
+    "description": "Trova l'edificio più antico del tuo quartiere e scopri la sua storia. Conoscere cosa c'era prima di te ti aiuta a sentirti più radicato.",
+    "instructions": [
+      "Cerca online o chiedi in giro qual è l'edificio più antico nelle vicinanze.",
+      "Vai a vederlo da vicino — osserva l'architettura, i materiali.",
+      "Cerca una targa, un'insegna o qualsiasi indizio sulla sua storia.",
+      "Fai una foto e annotati quello che hai scoperto.",
+      "Condividi la storia con qualcuno."
+    ],
+    "proofSuggestion": "Una foto dell'edificio e una breve nota sulla sua storia."
+  },
+  "nc_explore_011": {
+    "title": "Il miglior punto per il tramonto",
+    "description": "Trova il posto migliore per guardare il tramonto nella tua città. Una volta che trovi il tuo angolo, ci tornerai sempre.",
+    "instructions": [
+      "Chiedi alla gente del posto o cerca online i punti panoramici per il tramonto.",
+      "Arriva circa 30 minuti prima del tramonto.",
+      "Trova un posticino comodo e mettiti comodo.",
+      "Guarda tutto il tramonto — nota come la luce trasforma la città.",
+      "Fai una foto nel momento più bello."
+    ],
+    "proofSuggestion": "Una foto del tramonto dal tuo punto panoramico."
+  },
+  "nc_fun_006": {
+    "title": "La mappa dei tuoi posti preferiti",
+    "description": "Crea una mappa personale dei tuoi posti preferiti finora. Vederli tutti insieme rende la tua città meno estranea e più casa.",
+    "instructions": [
+      "Apri un'app di mappe o prendi una mappa cartacea.",
+      "Segna tutti i posti che ti sono piaciuti finora.",
+      "Aggiungi una breve nota per ciascuno.",
+      "Nota se c'è uno schema — c'è una zona della città che ti attira di più?",
+      "Condividi la mappa con un amico o salvala."
+    ],
+    "proofSuggestion": "Uno screenshot della tua mappa personale con le note."
+  },
+  "nc_comm_006": {
+    "title": "Mini-guida del tuo quartiere",
+    "description": "Scrivi una breve guida personale del tuo quartiere — i 5 posti migliori, la tua passeggiata preferita, il momento ideale per visitarlo. Scriverla ti aiuta ad apprezzare quello che hai già scoperto.",
+    "instructions": [
+      "Apri l'app delle note o prendi carta e penna.",
+      "Elenca le tue 5 raccomandazioni migliori per chi è nuovo qui.",
+      "Per ognuna, scrivi una frase sul perché ti piace.",
+      "Aggiungi un percorso a piedi che colleghi due o più delle tue scelte.",
+      "Condividi la guida con un amico o in una community online."
+    ],
+    "proofSuggestion": "Condividi il testo della tua mini-guida o una foto."
+  },
+  "nc_social_008": {
+    "title": "Ringrazia nella lingua del posto",
+    "description": "Impara a dire 'grazie', 'buongiorno' e 'mi scusi' nella lingua locale (o nel dialetto) e usa tutte e tre le espressioni oggi nella tua routine.",
+    "instructions": [
+      "Cerca online o chiedi a qualcuno come si dice grazie, buongiorno e mi scusi nella lingua del posto.",
+      "Esercitati a dirle ad alta voce un paio di volte.",
+      "Usale tutte e tre durante la giornata — in un negozio, per strada, al bar.",
+      "Nota come reagiscono le persone quando ci provi.",
+      "Scrivi le parole nuove che hai imparato."
+    ],
+    "proofSuggestion": "Condividi le espressioni che hai imparato e una reazione che hai ricevuto."
+  },
+  "nc_explore_014": {
+    "title": "Passeggiata mattutina",
+    "description": "Fai una passeggiata nel quartiere la mattina e nota cosa cambia rispetto al pomeriggio. Orari diversi svelano ritmi diversi — il forno che apre presto, i corridori, i bambini che vanno a scuola.",
+    "instructions": [
+      "Esci per una passeggiata di 15 minuti la mattina (prima delle 10).",
+      "Nota cosa è aperto, chi è in giro, che energia si respira.",
+      "Confronta mentalmente con le stesse strade nel pomeriggio.",
+      "Trova una cosa che esiste solo di mattina — un profumo, un'abitudine, un volto.",
+      "Scatta una foto che catturi la sensazione del mattino."
+    ],
+    "proofSuggestion": "Una foto che cattura l'energia mattutina del tuo quartiere."
+  },
+  "nc_social_002": {
+    "title": "Partecipa a un evento locale",
+    "description": "Trova un evento o un ritrovo gratuito in zona e presentati. Non devi essere l'anima della festa — basta esserci e salutare.",
+    "instructions": [
+      "Cerca online eventi gratuiti nella tua città questa settimana.",
+      "Scegline uno in linea con i tuoi interessi, anche vagamente.",
+      "Presentati qualche minuto prima dell'inizio.",
+      "Presentati ad almeno una persona.",
+      "Resta almeno per la prima metà."
+    ],
+    "proofSuggestion": "Una foto dall'evento, oppure racconta chi hai conosciuto."
+  },
+  "nc_social_004": {
+    "title": "Cucina e condividi con un vicino",
+    "description": "Prepara un piatto e portane una piccola porzione a un vicino con un biglietto gentile. Il cibo è uno dei modi più universali per creare legami.",
+    "instructions": [
+      "Scegli una ricetta — qualcosa di casa tua o un piatto locale.",
+      "Cucina il piatto.",
+      "Prepara una porzione e portala a un vicino.",
+      "Se è in casa, presentati.",
+      "Se non c'è, lasciala con un bigliettino."
+    ],
+    "proofSuggestion": "Una foto del piatto che hai cucinato."
+  },
+  "nc_fun_001": {
+    "title": "Avventura a fermata casuale",
+    "description": "Prendi un autobus o la metro fino a una fermata dove non sei mai stato ed esplora i dintorni per 15 minuti.",
+    "instructions": [
+      "Vai alla fermata dei mezzi pubblici più vicina.",
+      "Viaggia per 5-10 fermate in una direzione che non conosci.",
+      "Scendi e cammina per almeno 15 minuti.",
+      "Trova una cosa che vale la pena ricordare.",
+      "Torna a casa usando un percorso diverso."
+    ],
+    "proofSuggestion": "Una foto dalla fermata che hai esplorato."
+  },
+  "nc_social_006": {
+    "title": "Fai volontariato per una causa locale",
+    "description": "Trova un'occasione di volontariato nella tua zona e dedica qualche ora. Il volontariato ti mette in contatto con persone che hanno a cuore le stesse cose.",
+    "instructions": [
+      "Cerca opportunità di volontariato nella tua città.",
+      "Iscriviti per un evento singolo o un turno breve.",
+      "Presentati pronto a dare una mano.",
+      "Chiacchiera con gli altri volontari.",
+      "Rifletti su come ti sei sentito."
+    ],
+    "proofSuggestion": "Una foto dall'evento di volontariato, oppure racconta per quale causa hai dato una mano."
+  }
+}

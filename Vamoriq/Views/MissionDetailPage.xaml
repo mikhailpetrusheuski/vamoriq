@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="Vamoriq.Views.MissionDetailPage"
+             xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:Vamoriq.ViewModels"
+             xmlns:loc="clr-namespace:Vamoriq.Extensions"
+             xmlns:resx="clr-namespace:Vamoriq.Resources.Localization"
+             Title="{loc:Localize Mission_Title}"
+             BackgroundColor="{AppThemeBinding Light={StaticResource BackgroundLight}, Dark={StaticResource Background}}"
+             NavigationPage.HasNavigationBar="False"
+             Shell.TabBarIsVisible="False">
+    <Grid>
+        <ScrollView>
+            <StackLayout Style="{StaticResource MainStackLayout}">
+
+                <StackLayout Orientation="Horizontal" Spacing="8" Margin="0,48,0,0">
+                    <Frame CornerRadius="12" Padding="8,4" BackgroundColor="{StaticResource Primary}" HasShadow="False">
+                        <Label Text="{Binding Mission.Difficulty}"
+                               TextColor="White"
+                               FontSize="12"
+                               FontAttributes="Bold"/>
+                    </Frame>
+                    <Label Text="{Binding Mission.EstimatedMinutes, StringFormat='~{0} min'}"
+                           TextColor="{AppThemeBinding Light={StaticResource TextSecondaryLight}, Dark={StaticResource TextSecondary}}"
+                           FontSize="14"
+                           VerticalOptions="Center"/>
+                </StackLayout>
+
+                <Label Text="{Binding Mission.Title}"
+                       Style="{StaticResource RecipeTitle}"
+                       Margin="0,16,0,0"/>
+                <Label Text="{Binding Mission.Description}"
+                       Style="{StaticResource RecipeDescription}"/>
+
+                <Label Text="{loc:Localize Mission_Steps}"
+                       Style="{StaticResource SectionTitle}"
+                       Margin="0,24,0,0"/>
+                <StackLayout BindableLayout.ItemsSource="{Binding InstructionItems}" Spacing="12">
+                    <BindableLayout.ItemTemplate>
+                        <DataTemplate>
+                            <Grid ColumnDefinitions="Auto,*" ColumnSpacing="12">
+                                <Border Grid.Column="0"
+                                        Style="{StaticResource InstructionNumber}"
+                                        WidthRequest="24"
+                                        HeightRequest="24"
+                                        Stroke="Transparent">
+                                    <Border.StrokeShape>
+                                        <Ellipse />
+                                    </Border.StrokeShape>
+                                    <Label Text="{Binding Index}"
+                                           TextColor="White"
+                                           FontSize="12"
+                                           FontAttributes="Bold"
+                                           HorizontalOptions="Center"
+                                           VerticalOptions="Center"/>
+                                </Border>
+                                <Label Grid.Column="1"
+                                       Text="{Binding Text}"
+                                       Style="{StaticResource InstructionText}"
+                                       LineBreakMode="WordWrap"
+                                       VerticalOptions="Start"/>
+                            </Grid>
+                        </DataTemplate>
+                    </BindableLayout.ItemTemplate>
+                </StackLayout>
+
+                <StackLayout IsVisible="{Binding ShowProofSection}" Spacing="12" Margin="0,32,0,0">
+                    <Label Text="{loc:Localize Mission_CompleteYourMission}"
+                           Style="{StaticResource SectionTitle}"/>
+                    <Label Text="{Binding Mission.ProofSuggestion}"
+                           TextColor="{AppThemeBinding Light={StaticResource TextSecondaryLight}, Dark={StaticResource TextSecondary}}"
+                           FontSize="14"
+                           FontAttributes="Italic"/>
+
+                    <Frame Style="{StaticResource InputFieldFrame}"
+                           HeightRequest="-1"
+                           Padding="12,8">
+                        <Editor Text="{Binding ProofText}"
+                                Placeholder="{loc:Localize Mission_ProofPlaceholder}"
+                                MinimumHeightRequest="80"
+                                AutoSize="TextChanges"
+                                TextColor="{AppThemeBinding Light={StaticResource TextPrimaryLight}, Dark={StaticResource TextPrimary}}"
+                                PlaceholderColor="{AppThemeBinding Light={StaticResource TextTertiaryLight}, Dark={StaticResource TextTertiary}}"
+                                BackgroundColor="Transparent"/>
+                    </Frame>
+                    <Label Text="{Binding ProofCharCount}"
+                           FontSize="12"
+                           HorizontalOptions="End"
+                           Margin="0,-8,4,0"
+                           TextColor="{AppThemeBinding Light={StaticResource TextTertiaryLight}, Dark={StaticResource TextTertiary}}"/>
+
+                    <StackLayout Orientation="Horizontal" Spacing="12">
+                        <Button Text="{Binding AttachPhotoText}"
+                                Style="{StaticResource SecondaryButton}"
+                                Command="{Binding AttachPhotoCommand}"
+                                HorizontalOptions="Start"/>
+                        <Label Text="{loc:Localize Mission_PhotoAttached}"
+                               IsVisible="{Binding HasProofPhoto}"
+                               TextColor="{StaticResource Primary}"
+                               FontSize="14"
+                               VerticalOptions="Center"/>
+                    </StackLayout>
+
+                    <Button Text="{loc:Localize Mission_Complete}"
+                            Command="{Binding CompleteMissionCommand}"
+                            Margin="0,8,0,0"
+                            Style="{StaticResource GenerateButton}">
+                        <Button.Triggers>
+                            <DataTrigger TargetType="Button" Binding="{Binding CanComplete}" Value="False">
+                                <Setter Property="BackgroundColor" Value="#3A3A3A"/>
+                                <Setter Property="Opacity" Value="0.6"/>
+                            </DataTrigger>
+                        </Button.Triggers>
+                    </Button>
+                    <Label Text="{Binding ErrorMessage}"
+                           IsVisible="{Binding HasError}"
+                           TextColor="Red"
+                           HorizontalOptions="Center"/>
+                </StackLayout>
+
+                <StackLayout IsVisible="{Binding ShowCelebration}" Spacing="0" Margin="0,24,0,16" HorizontalOptions="Center">
+                    <Label Text="✓"
+                           FontSize="64"
+                           HorizontalOptions="Center"
+                           TextColor="{StaticResource Primary}"
+                           Margin="0,0,0,8"/>
+                    <Label Text="{loc:Localize Mission_CompleteTitle}"
+                           FontSize="26"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Center"
+                           TextColor="{AppThemeBinding Light={StaticResource TextPrimaryLight}, Dark={StaticResource TextPrimary}}"
+                           Margin="0,0,0,16"/>
+
+                    <Frame BackgroundColor="{AppThemeBinding Light=#F5F0E8, Dark=#1E1E2A}"
+                           CornerRadius="16"
+                           HasShadow="False"
+                           Padding="24,20"
+                           HorizontalOptions="Fill"
+                           Margin="0,0,0,12">
+                        <StackLayout Spacing="6" HorizontalOptions="Center">
+                            <Label Text="🔥"
+                                   FontSize="32"
+                                   HorizontalOptions="Center"/>
+                            <Label Text="{Binding CelebrationStreakText}"
+                                   FontSize="28"
+                                   FontAttributes="Bold"
+                                   TextColor="{StaticResource Primary}"
+                                   HorizontalOptions="Center"
+                                   HorizontalTextAlignment="Center"/>
+                        </StackLayout>
+                    </Frame>
+
+                    <Label Text="{loc:Localize Mission_ComeBackTomorrow}"
+                           FontSize="14"
+                           HorizontalOptions="Center"
+                           TextColor="{AppThemeBinding Light={StaticResource TextSecondaryLight}, Dark={StaticResource TextSecondary}}"
+                           HorizontalTextAlignment="Center"
+                           Margin="0,0,0,16"/>
+                    <Button Text="{loc:Localize Mission_SeeProgress}"
+                            Style="{StaticResource GenerateButton}"
+                            Command="{Binding SeeProgressCommand}"/>
+                </StackLayout>
+
+                <BoxView HeightRequest="24"/>
+            </StackLayout>
+        </ScrollView>
+
+        <Border ZIndex="10"
+                Padding="{OnIdiom Phone=10 0 10 0, Tablet=16 0 16 0, Desktop=16 0 16 0}"
+                BackgroundColor="{AppThemeBinding Light={StaticResource BackgroundLight}, Dark={StaticResource Background}}"
+                StrokeThickness="0"
+                HorizontalOptions="Fill"
+                VerticalOptions="Start">
+
+            <Grid ColumnDefinitions="Auto,*"
+                  ColumnSpacing="12">
+                <Border Padding="16,4"
+                        BackgroundColor="Transparent"
+                        StrokeThickness="0"
+                        HorizontalOptions="Start">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="16" />
+                    </Border.StrokeShape>
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding GoBackCommand}" />
+                    </Border.GestureRecognizers>
+
+                    <StackLayout Orientation="Horizontal"
+                                 Spacing="8"
+                                 VerticalOptions="Center">
+                        <Label Text="←"
+                               TextColor="{AppThemeBinding Light={StaticResource TextPrimaryLight}, Dark={StaticResource TextPrimary}}"
+                               FontSize="16"
+                               FontAttributes="Bold"
+                               VerticalOptions="Center"
+                               Margin="0,-2,0,0" />
+                        <Label Text="{loc:Localize Common_Back}"
+                               TextColor="{AppThemeBinding Light={StaticResource TextPrimaryLight}, Dark={StaticResource TextPrimary}}"
+                               FontSize="16"
+                               FontAttributes="Bold"
+                               VerticalOptions="Center" />
+                    </StackLayout>
+                </Border>
+
+                <Border Grid.Column="1"
+                        Padding="16,4"
+                        BackgroundColor="Transparent"
+                        StrokeThickness="0"
+                        HorizontalOptions="End">
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="16" />
+                    </Border.StrokeShape>
+                    <Border.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding ShareMissionCommand}" />
+                    </Border.GestureRecognizers>
+
+                    <Label Text="{loc:Localize Common_Share}"
+                           TextColor="{AppThemeBinding Light={StaticResource TextPrimaryLight}, Dark={StaticResource TextPrimary}}"
+                           FontSize="16"
+                           FontAttributes="Bold"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center" />
+                </Border>
+            </Grid>
+        </Border>
+
+        <Grid IsVisible="{Binding IsBusy}"
+              BackgroundColor="#80000000"
+              InputTransparent="False">
+            <ActivityIndicator IsRunning="True"
+                               Color="#C49340"
+                               WidthRequest="56"
+                               HeightRequest="56"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center" />
+        </Grid>
+    </Grid>
+</ContentPage>

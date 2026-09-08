@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="Vamoriq.Views.MissionPage"
+             xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:Vamoriq.ViewModels"
+             xmlns:loc="clr-namespace:Vamoriq.Extensions"
+             xmlns:resx="clr-namespace:Vamoriq.Resources.Localization"
+             Title="{loc:Localize Mission_Title}"
+             BackgroundColor="{AppThemeBinding Light={StaticResource BackgroundLight}, Dark={StaticResource Background}}"
+             NavigationPage.HasNavigationBar="False">
+
+    <Grid>
+
+        <Ellipse Fill="{StaticResource Primary}"
+                 WidthRequest="5"
+                 HeightRequest="5"
+                 Opacity="0.10"
+                 HorizontalOptions="Start"
+                 VerticalOptions="Start"
+                 Margin="32,100,0,0"
+                 InputTransparent="True" />
+        <Ellipse Fill="{StaticResource Primary}"
+                 WidthRequest="4"
+                 HeightRequest="4"
+                 Opacity="0.07"
+                 HorizontalOptions="End"
+                 VerticalOptions="Start"
+                 Margin="0,200,20,0"
+                 InputTransparent="True" />
+
+        <ScrollView Padding="{OnIdiom Phone=0 0 0 12, Tablet=0 0 0 24, Desktop=0 0 0 24}">
+            <StackLayout Style="{StaticResource MainStackLayout}">
+
+                <StackLayout Spacing="8">
+                    <Label Text="{loc:Localize Mission_Title}"
+                           Style="{StaticResource HeaderLabel}"
+                           FontSize="34"
+                           FontAttributes="Bold"/>
+                    <Label Text="{loc:Localize Mission_Subtitle}"
+                           Style="{StaticResource SubtitleLabel}"/>
+                </StackLayout>
+
+                <Frame Style="{StaticResource CardFrame}"
+                       Margin="0,16,0,0"
+                       IsVisible="{Binding ShowStreak}">
+                    <StackLayout Orientation="Horizontal" Spacing="8">
+                        <Label Text="🔥" FontSize="20"/>
+                        <Label Text="{Binding StreakText}"
+                               Style="{StaticResource Body}"
+                               FontAttributes="Bold"/>
+                    </StackLayout>
+                </Frame>
+
+                <StackLayout IsVisible="{Binding ShowOverdueState}" Spacing="16" Margin="0,24,0,0">
+                    <Frame Style="{StaticResource CardFrame}">
+                        <StackLayout Spacing="12">
+                            <Label Text="{loc:Localize Mission_OverdueTitle}"
+                                   Style="{StaticResource Body}"
+                                   FontAttributes="Bold"/>
+                            <Label Text="{Binding OverdueMission.Title}"
+                                   Style="{StaticResource RecipeTitle}"/>
+                            <Label Text="{Binding OverdueMission.Description}"
+                                   Style="{StaticResource RecipeDescription}"
+                                   MaxLines="3"/>
+                        </StackLayout>
+                    </Frame>
+                    <Button Text="{loc:Localize Mission_FinishYesterday}"
+                            Style="{StaticResource GenerateButton}"
+                            Command="{Binding FinishOverdueCommand}"/>
+                    <Button Text="{loc:Localize Mission_SkipGetToday}"
+                            Style="{StaticResource SecondaryButton}"
+                            Command="{Binding SkipOverdueCommand}"/>
+                </StackLayout>
+
+                <StackLayout IsVisible="{Binding ShowGetMissionButton}" Spacing="16" Margin="0,24,0,0">
+                    <Label Text="{loc:Localize Mission_ReadyForChallenge}"
+                           Style="{StaticResource SectionTitleLabel}"
+                           HorizontalTextAlignment="Center"/>
+                    <Button Text="{loc:Localize Mission_GetToday}"
+                            Style="{StaticResource GenerateButton}"
+                            Command="{Binding GetMissionCommand}"
+                            IsEnabled="{Binding IsGenerating, Converter={StaticResource InverseBoolConverter}}"/>
+                </StackLayout>
+
+                <StackLayout IsVisible="{Binding ShowActiveState}" Spacing="16" Margin="0,24,0,0">
+                    <Frame Style="{StaticResource CardFrame}">
+                        <StackLayout Spacing="12">
+                            <StackLayout Orientation="Horizontal" Spacing="8">
+                                <Frame CornerRadius="12" Padding="8,4" BackgroundColor="{StaticResource Primary}" HasShadow="False">
+                                    <Label Text="{Binding TodayMission.Difficulty}"
+                                           TextColor="White"
+                                           FontSize="12"
+                                           FontAttributes="Bold"/>
+                                </Frame>
+                                <Label Text="{Binding TodayMission.EstimatedMinutes, StringFormat='~{0} min'}"
+                                       Style="{StaticResource Callout}"
+                                       VerticalOptions="Center"/>
+                            </StackLayout>
+                            <Label Text="{Binding TodayMission.Title}"
+                                   Style="{StaticResource RecipeTitle}"/>
+                            <Label Text="{Binding TodayMission.Description}"
+                                   Style="{StaticResource RecipeDescription}"
+                                   MaxLines="4"/>
+                        </StackLayout>
+                    </Frame>
+                    <Button Text="{loc:Localize Mission_ViewMission}"
+                            Style="{StaticResource GenerateButton}"
+                            Command="{Binding ViewMissionCommand}"/>
+                </StackLayout>
+
+                <StackLayout IsVisible="{Binding ShowCompletedState}" Spacing="16" Margin="0,24,0,0" HorizontalOptions="Center">
+                    <Label Text="✓"
+                           FontSize="64"
+                           HorizontalOptions="Center"
+                           TextColor="{StaticResource Primary}"/>
+                    <Label Text="{loc:Localize Mission_AllDone}"
+                           Style="{StaticResource HeaderLabel}"
+                           FontSize="24"
+                           HorizontalTextAlignment="Center"/>
+                    <Label Text="{Binding StreakText, StringFormat='🔥 {0}'}"
+                           Style="{StaticResource Body}"
+                           HorizontalTextAlignment="Center"/>
+                    <Label Text="{loc:Localize Mission_ComeBackTomorrow}"
+                           Style="{StaticResource Callout}"
+                           HorizontalTextAlignment="Center"/>
+                </StackLayout>
+
+                <Label Text="{Binding ErrorMessage}"
+                       IsVisible="{Binding HasError}"
+                       TextColor="Red"
+                       HorizontalOptions="Center"
+                       Margin="0,8"/>
+
+            </StackLayout>
+        </ScrollView>
+
+        <Grid IsVisible="{Binding ShowLoading}"
+              BackgroundColor="#80000000"
+              InputTransparent="False">
+            <ActivityIndicator IsRunning="True"
+                               Color="#C49340"
+                               WidthRequest="56"
+                               HeightRequest="56"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"/>
+        </Grid>
+    </Grid>
+</ContentPage>

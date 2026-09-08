@@ -1,0 +1,362 @@
+{
+  "nc_social_001": {
+    "title": "Rozmowa w kawiarni",
+    "description": "Wpadnij do lokalnej kawiarni i nawiąż krótką rozmowę — zamów coś nowego, zapytaj baristę co poleca, albo zagadaj kogoś przy barze. Nawet dwuminutowa wymiana zdań sprawia, że miejsce zaczyna być znajome.",
+    "instructions": [
+      "Wybierz kawiarnię w okolicy, która wygląda przyjaźnie.",
+      "Zamów coś i usiądź przy barze albo wspólnym stoliku.",
+      "Zacznij od czegoś prostego — zapytaj, co polecają albo co jest najpopularniejsze.",
+      "Spróbuj dowiedzieć się jednej rzeczy o kawiarni albo o osobie, z którą rozmawiasz.",
+      "Podziękuj przed wyjściem."
+    ],
+    "proofSuggestion": "Zdjęcie Twojego napoju w kawiarni albo jedna rzecz, której się dowiedziałeś/aś."
+  },
+  "nc_explore_001": {
+    "title": "Odkrywanie lokalnego rynku",
+    "description": "Znajdź mały lokalny sklep lub rynek w okolicy i kup coś, czego jeszcze nie próbowałeś/aś. Zapytaj sprzedawcę skąd to pochodzi i jak tego używać. Rynki to serce każdej dzielnicy.",
+    "instructions": [
+      "Poszukaj lokalnego rynku albo małego sklepu w pobliżu.",
+      "Nie spiesz się — rozejrzyj się, co jest nietypowe lub ciekawe.",
+      "Wybierz jedną rzecz, która jest dla Ciebie nowa albo którą lubią miejscowi.",
+      "Zapytaj sprzedawcę o ten produkt.",
+      "Ciesz się swoim znaleziskiem w domu albo podziel się nim z kimś."
+    ],
+    "proofSuggestion": "Zdjęcie tego, co kupiłeś/aś, albo stoiska, które Cię zainteresowało."
+  },
+  "nc_comm_001": {
+    "title": "Poproś o polecenie",
+    "description": "Zapytaj sympatyczną osobę lub sprzedawcę o ich ulubione miejsce na jedzenie w okolicy. Ludzie uwielbiają dzielić się swoimi odkryciami, a Ty trafisz na miejsca, o których nie pisze żaden przewodnik.",
+    "instructions": [
+      "Wybierz spokojne miejsce — sklep, park, ulicę z przechodniami.",
+      "Zagadaj kogoś przyjaźnie wyglądającego i powiedz, że jesteś tu nowy/a.",
+      "Zapytaj o ulubione miejsce na jedzenie lub restaurację.",
+      "Zapisz nazwę, żeby nie zapomnieć.",
+      "Podziękuj serdecznie."
+    ],
+    "proofSuggestion": "Podziel się rekomendacją, którą dostałeś/aś."
+  },
+  "nc_explore_002": {
+    "title": "Spacer nową trasą",
+    "description": "Idź inną drogą przez swoją dzielnicę — ulicą, której jeszcze nie znasz, zaułkiem, który wygląda ciekawie. Nowe trasy odsłaniają ukryte warstwy miasta.",
+    "instructions": [
+      "Wybierz kierunek, w który normalnie nie chodzisz i ruszaj.",
+      "Wyłącz nawigację przynajmniej na część spaceru.",
+      "Zwróć uwagę na trzy rzeczy, które Cię zaskoczą lub ucieszą.",
+      "Zrób zdjęcie swojego ulubionego odkrycia.",
+      "Spaceruj co najmniej 15 minut, zanim zawrócisz."
+    ],
+    "proofSuggestion": "Zdjęcie czegoś niespodziewanego, co znalazłeś/aś na spacerze."
+  },
+  "nc_social_003": {
+    "title": "Przywitaj się w parku",
+    "description": "Idź do lokalnego parku i przywitaj się z kimś — osobą z psem, kimś na ławce, rodzicem z dziećmi. Uśmiech albo proste «cześć» potrafi sprawić, że miejsce zaczyna czuć się jak dom.",
+    "instructions": [
+      "Udaj się do najbliższego parku lub terenu zielonego.",
+      "Pospaceruj i zwróć uwagę, kto tam jest.",
+      "Przywitaj się, skomentuj pogodę albo powiedz miły komplement o psie.",
+      "Jeśli rozmowa się rozwinie — świetnie. Jeśli nie — też jest OK.",
+      "Usiądź na chwilę i ciesz się tym miejscem."
+    ],
+    "proofSuggestion": "Zdjęcie parku albo krótka historia z wizyty."
+  },
+  "nc_explore_003": {
+    "title": "Znajdź swoją kawiarnię",
+    "description": "Każdy lokalny ma swoją ulubioną kawiarnię. Dziś zacznij szukać swojej. Odwiedź miejsce, w którym jeszcze nie byłeś/aś i sprawdź, czy to jest Twoje miejsce.",
+    "instructions": [
+      "Poszukaj niezależnej kawiarni w pobliżu.",
+      "Wejdź, zamów swój ulubiony napój i zwróć uwagę na klimat.",
+      "Poobserwuj stałych bywalców, muzykę, wystrój.",
+      "Jeśli barista wygląda przyjaźnie, zapytaj co jest najpopularniejsze.",
+      "Oceń to miejsce — czy to Twoja nowa kawiarnia?"
+    ],
+    "proofSuggestion": "Zdjęcie napoju w nowej kawiarni z krótką oceną."
+  },
+  "nc_comm_002": {
+    "title": "Historia od sprzedawcy",
+    "description": "Odwiedź lokalny sklep i zapytaj właściciela o historię okolicy. Właściciele małych biznesów to często żywa pamięć miejsca — znają opowieści, których nie znajdziesz w żadnym przewodniku.",
+    "instructions": [
+      "Znajdź sklep, który wygląda, jakby był tu już od dawna.",
+      "Porozglądaj się swobodnie, a potem nawiąż rozmowę.",
+      "Zapytaj, jak długo tu są albo z czego słynie ta okolica.",
+      "Słuchaj uważnie — możesz usłyszeć coś zaskakującego.",
+      "Kup coś drobnego jako podziękowanie."
+    ],
+    "proofSuggestion": "Zdjęcie sklepu albo jedna historia, której się dowiedziałeś/aś."
+  },
+  "nc_explore_004": {
+    "title": "Księgarnia lub galeria",
+    "description": "Znajdź lokalną księgarnię, galerię lub miejsce kulturalne i poświęć chwilę na rozglądanie się. Takie miejsca przyciągają ciekawych ludzi i dużo mówią o duszy miasta.",
+    "instructions": [
+      "Poszukaj niezależnej księgarni, galerii lub miejsca kulturalnego w pobliżu.",
+      "Wejdź bez planu — po prostu się rozglądaj.",
+      "Weź do ręki coś, co przyciągnęło Twój wzrok.",
+      "Jeśli w pobliżu jest pracownik, zapytaj co poleca.",
+      "Spędź tam co najmniej 15 minut, wchłaniając atmosferę."
+    ],
+    "proofSuggestion": "Zdjęcie czegoś, co Cię zainteresowało, albo nazwa książki lub dzieła, które Ci się spodobało."
+  },
+  "nc_explore_005": {
+    "title": "Safari po street arcie",
+    "description": "Wyrusz na poszukiwanie street artu, murali i kreatywnych wyrażeń w swojej okolicy. To świetna wymówka na spacer, a swoją dzielnicę zobaczysz zupełnie innymi oczami.",
+    "instructions": [
+      "Wybierz dzielnicę do zwiedzania pieszo.",
+      "Szukaj murali, graffiti, naklejek, instalacji.",
+      "Sfotografuj co najmniej trzy prace, które Cię zachwycą.",
+      "Spróbuj dowiedzieć się, kto je stworzył lub co oznaczają.",
+      "Wybierz swoją ulubioną i powiedz, dlaczego Ci się spodobała."
+    ],
+    "proofSuggestion": "Zdjęcia Twoich ulubionych znalezisk street artowych."
+  },
+  "nc_comm_003": {
+    "title": "Pocztówka z nowego miasta",
+    "description": "Napisz pocztówkę — prawdziwą lub cyfrową — o swoim nowym mieście do kogoś bliskiego. Przełożenie swoich wrażeń na słowa pomaga zauważyć, co już zaczynasz lubić.",
+    "instructions": [
+      "Kup pocztówkę w lokalnym sklepie albo otwórz notatnik w telefonie.",
+      "Napisz o swoim nowym mieście — co zauważyłeś/aś, co Cię zaskoczyło.",
+      "Dodaj przynajmniej jeden konkretny szczegół — zapach, dźwięk, kolor.",
+      "Wyślij to do przyjaciela lub kogoś z rodziny.",
+      "Zachowaj kopię dla siebie jako kapsułę czasu."
+    ],
+    "proofSuggestion": "Zdjęcie pocztówki albo fragment tego, co napisałeś/aś."
+  },
+  "nc_fun_008": {
+    "title": "Zamów coś, czego nie umiesz wymówić",
+    "description": "Idź do restauracji lub piekarni i zamów coś, o czym nigdy nie słyszałeś/aś. Pokaż na menu, zapytaj co to jest i spróbuj. Jedne z najlepszych posiłków zaczynają się od słów: nie mam pojęcia, co to jest.",
+    "instructions": [
+      "Znajdź restaurację, piekarnię lub stoisko z nieznanymi opcjami.",
+      "Wybierz coś, czego nie umiesz wymówić lub nie rozpoznajesz.",
+      "Zapytaj obsługę, co to jest i jak się to je.",
+      "Spróbuj z otwartą głową.",
+      "Oceń — czy zamówiłbyś/zamówiłabyś to jeszcze raz?"
+    ],
+    "proofSuggestion": "Zdjęcie tego, co zamówiłeś/aś i jednozdaniowy werdykt."
+  },
+  "nc_explore_012": {
+    "title": "Znajdź najcichsze miejsce",
+    "description": "Każda dzielnica ma ukryte ciche miejsce — podwórko, ławkę za budynkiem, róg parku, który nikt nie odwiedza. Znajdź swoje dzisiaj.",
+    "instructions": [
+      "Spaceruj po okolicy z celem znalezienia najbardziej spokojnego miejsca.",
+      "Sprawdź boczne uliczki, wewnętrzne podwórka, skraje parków, ogródki przy kościołach.",
+      "Kiedy znajdziesz kandydata, usiądź tam na co najmniej 5 minut.",
+      "Zwróć uwagę, co sprawia, że jest tam spokojnie — dźwięki, światło, widok.",
+      "Zapamiętaj to miejsce na chwile, kiedy będziesz go potrzebować."
+    ],
+    "proofSuggestion": "Zdjęcie cichego miejsca, które znalazłeś/aś."
+  },
+  "nc_social_007": {
+    "title": "Powiedz komuś komplement",
+    "description": "Powiedz dziś jeden szczery komplement nieznajomej osobie. Buty, ogródek, piesek, uśmiech. To trwa trzy sekundy, a może poprawić dzień dwóm osobom.",
+    "instructions": [
+      "Wyjdź na krótki spacer po okolicy.",
+      "Zwróć uwagę na coś naprawdę fajnego u kogoś, kogo mijasz.",
+      "Powiedz to głośno — krótko i ciepło.",
+      "Ciesz się reakcją. Większość ludzi rozkwita.",
+      "Zauważ, jak to wpłynęło też na Ciebie."
+    ],
+    "proofSuggestion": "Powiedz, co skomplementowałeś/aś i jak zareagowała ta osoba."
+  },
+  "nc_fun_009": {
+    "title": "Fotowycieczka po Twojej ulicy",
+    "description": "Chwyć telefon i stwórz mini fotorelację ze swojej ulicy. Sfotografuj detale, obok których codziennie przechodzisz — drzwi, szyldy, rośliny, faktury. Zaczniesz widzieć swoją ulicę zupełnie nowymi oczami.",
+    "instructions": [
+      "Wyjdź na zewnątrz z aparatem w telefonie gotowym do działania.",
+      "Idź powoli swoją ulicą, fotografując wszystko, co zwróci Twoją uwagę.",
+      "Zrób co najmniej 10 zdjęć — skup się na detalach, nie tylko budynkach.",
+      "Wybierz swoje 5 ulubionych.",
+      "Podziel się kolekcją z kimś albo zachowaj jako foto-esej."
+    ],
+    "proofSuggestion": "Twoje 3 ulubione zdjęcia z wycieczki."
+  },
+  "nc_explore_013": {
+    "title": "Ławka z widokiem",
+    "description": "Znajdź ławkę gdzieś w swoim mieście z ładnym widokiem — na rzekę, panoramę, ruchliwy plac — i po prostu usiądź na 10 minut, obserwując świat.",
+    "instructions": [
+      "Idź do miejsca z ciekawym widokiem.",
+      "Znajdź ławkę i usiądź. Żadnego telefonu przez 10 minut.",
+      "Obserwuj ludzi, wsłuchaj się w dźwięki, poczuj powietrze.",
+      "Pomyśl o jednej rzeczy, którą lubisz w tym miejscu.",
+      "Zrób zdjęcie widoku, zanim odejdziesz."
+    ],
+    "proofSuggestion": "Zdjęcie widoku z Twojej ławki."
+  },
+  "nc_explore_006": {
+    "title": "Odwiedź lokalną bibliotekę",
+    "description": "Biblioteki to nie tylko książki — to centra społeczności. Odwiedź swoją, przejdź się po przestrzeni i zobacz, co się tam dzieje. Możesz natknąć się na tablicę wydarzeń, klub czytelniczy albo sympatycznego bibliotekarza.",
+    "instructions": [
+      "Znajdź najbliższą bibliotekę publiczną i wybierz się tam.",
+      "Przejdź się po różnych działach.",
+      "Wyróbcie kartę biblioteczną, jeśli jeszcze jej nie masz.",
+      "Zapytaj bibliotekarza o nadchodzące wydarzenia.",
+      "Weź książkę lub ulotkę wychodząc."
+    ],
+    "proofSuggestion": "Zdjęcie biblioteki albo Twojej nowej karty bibliotecznej."
+  },
+  "nc_fun_003": {
+    "title": "Kuchnia, której nigdy nie próbowałeś/aś",
+    "description": "Wybierz kuchnię, której jeszcze nigdy nie kosztowałeś/aś i znajdź restaurację, która ją serwuje. Poproś kelnera o polecenie najlepszego dania dla kogoś, kto próbuje po raz pierwszy.",
+    "instructions": [
+      "Pomyśl o kuchni, której jeszcze nie próbowałeś/aś.",
+      "Znajdź lokalną restaurację, która ją serwuje.",
+      "Poproś kelnera o polecenie najlepszego dania dla początkującego.",
+      "Jedz powoli, zwracaj uwagę na smaki.",
+      "Oceń doświadczenie — wrócisz tu jeszcze?"
+    ],
+    "proofSuggestion": "Zdjęcie dania, które spróbowałeś/aś i jednozdaniowa recenzja."
+  },
+  "nc_explore_007": {
+    "title": "Spacer po muzeum lub galerii",
+    "description": "Odkryj lokalne muzeum lub galerię sztuki. Wiele z nich ma bezpłatny lub tani wstęp. Przejdź się bez pośpiechu, pozwól, żeby coś Cię zainteresowało i dowiedz się o tym więcej.",
+    "instructions": [
+      "Znajdź muzeum lub galerię w pobliżu — sprawdź dni bezpłatne.",
+      "Przejdź się bez pośpiechu.",
+      "Przeczytaj szczegółowy opis jednego eksponatu lub dzieła.",
+      "Jeśli nadarzy się okazja, zagadaj innego zwiedzającego.",
+      "Wybierz ulubiony eksponat i zapamiętaj, dlaczego Ci się spodobał."
+    ],
+    "proofSuggestion": "Zdjęcie Twojego ulubionego eksponatu lub dzieła sztuki."
+  },
+  "nc_explore_008": {
+    "title": "Poranny targ",
+    "description": "Odwiedź lokalny targ rolniczy i zanurz się w widokach i smakach. Porozmawiaj ze sprzedawcą o jego produktach i kup coś świeżego.",
+    "instructions": [
+      "Sprawdź, kiedy i gdzie odbywa się najbliższy targ rolniczy.",
+      "Idź wcześnie, kiedy atmosfera jest najlepsza.",
+      "Przejdź się po wszystkich rzędach, zanim zaczniesz kupować.",
+      "Porozmawiaj z przynajmniej jednym sprzedawcą o jego produktach.",
+      "Kup coś świeżego i ciesz się tym dziś."
+    ],
+    "proofSuggestion": "Zdjęcie targu albo Twoich zakupów."
+  },
+  "nc_comm_005": {
+    "title": "Polowanie na ukryty skarb",
+    "description": "Poproś kogoś z okolicy o polecenie restauracji, o której turyści nie wiedzą. A potem tam idź. Najlepsze miejsca zawsze przekazuje się z ust do ust.",
+    "instructions": [
+      "Zapytaj kogoś lokalnego o miejsce na jedzenie, którego turyści nie znają.",
+      "Zapisz nazwę i adres.",
+      "Idź tam, póki masz to świeżo w głowie.",
+      "Zamów to, co polecił Ci rozmówca, albo zapytaj o firmowe danie.",
+      "Daj znać osobie, która Ci poleciła, jak Ci smakowało."
+    ],
+    "proofSuggestion": "Zdjęcie dania w ukrytym skarbie i kto Ci go polecił."
+  },
+  "nc_explore_010": {
+    "title": "Najstarszy budynek w okolicy",
+    "description": "Znajdź najstarszy budynek w swojej dzielnicy i poznaj jego historię. Wiedza o tym, co było tu przed Tobą, pomaga poczuć się bardziej zakorzeniony/a.",
+    "instructions": [
+      "Poszukaj informacji albo zapytaj, który budynek jest najstarszy w okolicy.",
+      "Podejdź do niego i przyjrzyj się uważnie — architektura, materiały.",
+      "Poszukaj tablicy, szyldu lub jakiejś wskazówki o jego historii.",
+      "Zrób zdjęcie i zapisz, czego się dowiedziałeś/aś.",
+      "Opowiedz tę historię komuś."
+    ],
+    "proofSuggestion": "Zdjęcie budynku i krótka notatka o jego historii."
+  },
+  "nc_explore_011": {
+    "title": "Najlepszy punkt na zachód słońca",
+    "description": "Znajdź najlepsze miejsce do oglądania zachodu słońca w swoim mieście. Kiedy je odkryjesz, będziesz tam wracać raz za razem.",
+    "instructions": [
+      "Zapytaj miejscowych lub poszukaj w internecie punktów widokowych na zachód słońca.",
+      "Udaj się tam około 30 minut przed zachodem.",
+      "Znajdź wygodne miejsce i rozgość się.",
+      "Obserwuj cały zachód — zwróć uwagę, jak światło zmienia miasto.",
+      "Zrób zdjęcie w najlepszym momencie."
+    ],
+    "proofSuggestion": "Zdjęcie zachodu słońca z Twojego punktu widokowego."
+  },
+  "nc_fun_006": {
+    "title": "Mapa ulubionych miejsc",
+    "description": "Stwórz osobistą mapę swoich ulubionych miejsc w mieście. Kiedy zobaczysz je razem, miasto stanie się mniej obce i bardziej Twoje.",
+    "instructions": [
+      "Otwórz aplikację z mapą albo weź papierową mapę.",
+      "Zaznacz każde miejsce, które do tej pory Ci się spodobało.",
+      "Dodaj krótką notatkę do każdego.",
+      "Zwróć uwagę na wzorce — czy jest jakaś część miasta, która Cię przyciąga?",
+      "Podziel się mapą z przyjacielem albo zachowaj ją."
+    ],
+    "proofSuggestion": "Zrzut ekranu Twojej osobistej mapy z notatkami."
+  },
+  "nc_comm_006": {
+    "title": "Mini-przewodnik po Twojej dzielnicy",
+    "description": "Napisz krótki, osobisty przewodnik po swojej dzielnicy — top 5 miejsc, ulubiony spacer, najlepsza pora na wizytę. Pisanie go pomoże Ci docenić to, co już odkryłeś/aś.",
+    "instructions": [
+      "Otwórz notatnik w telefonie albo weź kartkę papieru.",
+      "Wypisz swoich top 5 rekomendacji dla kogoś nowego.",
+      "Do każdego napisz jedno zdanie, dlaczego Ci się podoba.",
+      "Dodaj sugerowaną trasę spacerową łączącą dwa lub więcej miejsc.",
+      "Podziel się przewodnikiem z przyjacielem lub społecznością online."
+    ],
+    "proofSuggestion": "Podziel się tekstem swojego mini-przewodnika albo zrób mu zdjęcie."
+  },
+  "nc_social_008": {
+    "title": "Podziękuj w lokalnym języku",
+    "description": "Naucz się mówić «dziękuję», «dzień dobry» i «przepraszam» w lokalnym języku (lub dialekcie) i użyj wszystkich trzech dziś w ciągu dnia.",
+    "instructions": [
+      "Sprawdź lub zapytaj kogoś, jak lokalnie mówi się dziękuję, dzień dobry i przepraszam.",
+      "Poćwicz wymowę kilka razy na głos.",
+      "Użyj wszystkich trzech zwrotów w ciągu dnia — w sklepie, na ulicy, w kawiarni.",
+      "Zwróć uwagę, jak ludzie reagują, kiedy próbujesz.",
+      "Zapisz nowe słowa, które udało Ci się podłapać."
+    ],
+    "proofSuggestion": "Podziel się zwrotami, których się nauczyłeś/aś i jedną reakcją."
+  },
+  "nc_explore_014": {
+    "title": "Poranny spacer po okolicy",
+    "description": "Przejdź się po swojej dzielnicy rano i zauważ, co wygląda inaczej niż po południu. Różne pory odsłaniają różne rytmy — piekarnia, która otwiera wcześnie, biegacze, odprowadzanie dzieci do szkoły.",
+    "instructions": [
+      "Wyrusz na 15-minutowy spacer rano (przed 10:00).",
+      "Zwróć uwagę, co jest otwarte, kto jest na zewnątrz, jaka jest energia.",
+      "Porównaj w myślach te same ulice z popołudniową porą.",
+      "Znajdź jedną rzecz, która istnieje tylko rano — zapach, zwyczaj, twarz.",
+      "Zrób zdjęcie oddające poranny klimat."
+    ],
+    "proofSuggestion": "Zdjęcie oddające poranną energię Twojej dzielnicy."
+  },
+  "nc_social_002": {
+    "title": "Dołącz do lokalnego wydarzenia",
+    "description": "Znajdź darmowe lokalne wydarzenie lub spotkanie i po prostu przyjdź. Nie musisz być duszą towarzystwa — wystarczy, że się pojawisz i powiesz «cześć».",
+    "instructions": [
+      "Poszukaj w internecie darmowych wydarzeń w swoim mieście w tym tygodniu.",
+      "Wybierz jedno, które pasuje do Twoich zainteresowań, choćby luźno.",
+      "Przyjdź kilka minut wcześniej.",
+      "Przedstaw się przynajmniej jednej osobie.",
+      "Zostań co najmniej na pierwszą połowę."
+    ],
+    "proofSuggestion": "Zdjęcie z wydarzenia albo opowiedz, kogo poznałeś/aś."
+  },
+  "nc_social_004": {
+    "title": "Ugotuj i podziel się z sąsiadem",
+    "description": "Ugotuj jakieś danie i zanieś małą porcję sąsiadowi z miłą karteczką. Jedzenie to jeden z najbardziej uniwersalnych sposobów na nawiązanie kontaktu.",
+    "instructions": [
+      "Wybierz przepis — coś z domu albo lokalne danie.",
+      "Ugotuj to danie.",
+      "Zapakuj małą porcję i zanieś sąsiadowi.",
+      "Jeśli jest w domu, przedstaw się.",
+      "Jeśli nie, zostaw z karteczką."
+    ],
+    "proofSuggestion": "Zdjęcie dania, które ugotowałeś/aś."
+  },
+  "nc_fun_001": {
+    "title": "Przygoda na losowym przystanku",
+    "description": "Wsiądź do autobusu lub metra i jedź do przystanku, na którym nigdy nie byłeś/aś. Wysiądź i przez 15 minut odkrywaj, co jest w okolicy.",
+    "instructions": [
+      "Udaj się do najbliższego przystanku komunikacji miejskiej.",
+      "Przejedź 5–10 przystanków w nieznanym kierunku.",
+      "Wysiądź i spaceruj co najmniej 15 minut.",
+      "Znajdź jedną rzecz wartą zapamiętania.",
+      "Wróć inną trasą."
+    ],
+    "proofSuggestion": "Zdjęcie z przystanku, który odkryłeś/aś."
+  },
+  "nc_social_006": {
+    "title": "Wolontariat dla lokalnej sprawy",
+    "description": "Znajdź lokalną okazję do wolontariatu i poświęć kilka godzin. Wolontariat łączy Cię z ludźmi, którym zależy na tych samych rzeczach.",
+    "instructions": [
+      "Poszukaj możliwości wolontariatu w swoim mieście.",
+      "Zapisz się na jednorazowe wydarzenie lub krótką zmianę.",
+      "Przyjdź gotowy/a do pomocy.",
+      "Porozmawiaj z innymi wolontariuszami.",
+      "Zastanów się, jak się z tym czułeś/aś."
+    ],
+    "proofSuggestion": "Zdjęcie z wolontariatu albo opowiedz, jakiej sprawie pomogłeś/aś."
+  }
+}

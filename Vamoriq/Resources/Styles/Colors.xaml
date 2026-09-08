@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+  <Color x:Key="Primary">#C49340</Color>
+  <Color x:Key="PrimaryDark">#A67C35</Color>
+  <Color x:Key="Secondary">#6B5B3E</Color>
+  <Color x:Key="SecondaryDark">#4A3F2B</Color>
+  <Color x:Key="Background">#000000</Color>
+  <Color x:Key="Surface">#2C2C2E</Color>
+  <Color x:Key="SurfaceVariant">#3A3A3C</Color>
+  <Color x:Key="SurfaceLightDark">#F2F2F7</Color>
+  <Color x:Key="TextPrimary">#FFFFFF</Color>
+  <Color x:Key="TextSecondary">#B3B3B3</Color>
+  <Color x:Key="TextTertiary">#8E8E93</Color>
+  <Color x:Key="Accent">#C49340</Color>
+  <Color x:Key="Error">#FF453A</Color>
+  <Color x:Key="Success">#30D158</Color>
+  <Color x:Key="Warning">#FF9F0A</Color>
+  <Color x:Key="Info">#007AFF</Color>
+  <Color x:Key="Border">#3A3A3C</Color>
+
+  <Color x:Key="OnPrimary">#FFFFFF</Color>
+  <Color x:Key="OnSurface">#FFFFFF</Color>
+  <Color x:Key="OnSurfaceVariant">#B3B3B3</Color>
+  <Color x:Key="OnBackground">#FFFFFF</Color>
+  <Color x:Key="Outline">#3A3A3C</Color>
+
+  <Color x:Key="PrimaryLight">#C49340</Color>
+  <Color x:Key="BackgroundLight">#FFFFFF</Color>
+  <Color x:Key="SurfaceLight">#F2F2F7</Color>
+  <Color x:Key="TextPrimaryLight">#000000</Color>
+  <Color x:Key="TextSecondaryLight">#3C3C43</Color>
+  <Color x:Key="TextTertiaryLight">#8E8E93</Color>
+  <Color x:Key="BorderLight">#E0E0E0</Color>
+</ResourceDictionary>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Vamoriq.Views.AuthPage"
+             xmlns:loc="clr-namespace:Vamoriq.Extensions"
+             Title="{loc:Localize Auth_Title}"
+             BackgroundColor="{AppThemeBinding Light=#F8F9FA, Dark=#000000}">
+
+    <Grid Padding="{StaticResource PagePadding}">
+
+        <Grid Margin="0,20,0,0"
+              BackgroundColor="{AppThemeBinding Light=#F8F9FA, Dark=#000000}"
+              Padding="20">
+
+            <Border IsVisible="{Binding IsLoading}"
+                    BackgroundColor="{AppThemeBinding Light=#FFFFFF, Dark=#2C2C2E}"
+                    Stroke="{AppThemeBinding Light=#E9ECEF, Dark=#3A3A3C}"
+                    StrokeThickness="1"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    Padding="36"
+                    WidthRequest="320">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="18" />
+                </Border.StrokeShape>
+
+                <VerticalStackLayout Spacing="12" VerticalOptions="Center">
+                    <ActivityIndicator IsRunning="True"
+                                       WidthRequest="56"
+                                       HeightRequest="56"
+                                       Color="#C49340"
+                                       HorizontalOptions="Center" />
+
+                    <Label Text="{Binding LoadingMessage}"
+                           FontSize="17"
+                           TextColor="{AppThemeBinding Light=#343A40, Dark=#FFFFFF}"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Center"
+                           HorizontalTextAlignment="Center" />
+
+                    <Label Text="{loc:Localize Auth_LoadingSubtitle}"
+                           FontSize="14"
+                           TextColor="{AppThemeBinding Light=#6C757D, Dark=#B3B3B3}"
+                           HorizontalOptions="Center"
+                           HorizontalTextAlignment="Center"
+                           LineBreakMode="WordWrap" />
+                </VerticalStackLayout>
+            </Border>
+
+            <Border IsVisible="{Binding HasError}"
+                    BackgroundColor="{AppThemeBinding Light=#FFFFFF, Dark=#2C2C2E}"
+                    Stroke="{AppThemeBinding Light=#FFE6E6, Dark=#8B0000}"
+                    StrokeThickness="2"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    Padding="30"
+                    WidthRequest="350">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="16" />
+                </Border.StrokeShape>
+
+                <StackLayout Spacing="20">
+
+                    <Label Text="⚠️"
+                           FontSize="64"
+                           HorizontalOptions="Center"
+                           Margin="0,0,0,10" />
+
+                    <Label Text="{loc:Localize Auth_Failed}"
+                           FontSize="20"
+                           FontAttributes="Bold"
+                           TextColor="#DC3545"
+                           HorizontalTextAlignment="Center" />
+
+                    <Label Text="{Binding ErrorMessage}"
+                           FontSize="16"
+                           TextColor="{AppThemeBinding Light=#6C757D, Dark=#B3B3B3}"
+                           HorizontalTextAlignment="Center"
+                           LineBreakMode="WordWrap" />
+
+                    <Button Text="{loc:Localize Auth_Retry}"
+                            Command="{Binding RetryCommand}"
+                            BackgroundColor="#C49340"
+                            TextColor="White"
+                            FontSize="16"
+                            FontAttributes="Bold"
+                            CornerRadius="12"
+                            HeightRequest="50"
+                            Margin="0,10,0,0" />
+                </StackLayout>
+            </Border>
+        </Grid>
+
+        <Border ZIndex="10"
+                Padding="{OnIdiom Phone=10 0 10 0, Tablet=10 0 24 0, Desktop=10 0 24 0}"
+                BackgroundColor="{AppThemeBinding Light={StaticResource BackgroundLight}, Dark={StaticResource Background}}"
+                StrokeThickness="0"
+                HorizontalOptions="Fill"
+                VerticalOptions="Start">
+            <Border Padding="16,4"
+                    BackgroundColor="Transparent"
+                    StrokeThickness="0"
+                    HorizontalOptions="Start">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="16" />
+                </Border.StrokeShape>
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding GoBackCommand}" />
+                </Border.GestureRecognizers>
+
+                <StackLayout Orientation="Horizontal"
+                             Spacing="8"
+                             VerticalOptions="Center">
+                    <Label Text="←"
+                           TextColor="{AppThemeBinding Light={StaticResource TextPrimaryLight}, Dark={StaticResource TextPrimary}}"
+                           FontSize="16"
+                           FontAttributes="Bold"
+                           VerticalOptions="Center"
+                           Margin="0,-2,0,0" />
+                    <Label Text="{loc:Localize Auth_Back}"
+                           TextColor="{AppThemeBinding Light={StaticResource TextPrimaryLight}, Dark={StaticResource TextPrimary}}"
+                           FontSize="16"
+                           FontAttributes="Bold"
+                           VerticalOptions="Center" />
+                </StackLayout>
+            </Border>
+        </Border>
+    </Grid>
+</ContentPage>

@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" use="preserve" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+
+  <data name="AppName" xml:space="preserve">
+    <value>Vamoriq</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Anuluj</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Zamknij</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Zapisz</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Usuń</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Edytuj</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Wstecz</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Dalej</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Błąd</value>
+  </data>
+  <data name="Loading" xml:space="preserve">
+    <value>Ładowanie...</value>
+  </data>
+  <data name="Common_View" xml:space="preserve">
+    <value>Zobacz</value>
+  </data>
+
+  <data name="ContinueWithGoogle" xml:space="preserve">
+    <value>Kontynuuj z Google</value>
+  </data>
+  <data name="ContinueWithApple" xml:space="preserve">
+    <value>Kontynuuj z Apple</value>
+  </data>
+  <data name="TryDemo" xml:space="preserve">
+    <value>Zobacz przykład</value>
+  </data>
+
+  <data name="Settings_Title" xml:space="preserve">
+    <value>Ustawienia</value>
+  </data>
+  <data name="Settings_Account" xml:space="preserve">
+    <value>Konto</value>
+  </data>
+  <data name="Settings_Email" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="Settings_SignIn" xml:space="preserve">
+    <value>Zaloguj się</value>
+  </data>
+  <data name="Settings_Preferences" xml:space="preserve">
+    <value>Preferencje</value>
+  </data>
+  <data name="Settings_Theme" xml:space="preserve">
+    <value>Motyw</value>
+  </data>
+  <data name="Settings_Light" xml:space="preserve">
+    <value>Jasny</value>
+  </data>
+  <data name="Settings_Dark" xml:space="preserve">
+    <value>Ciemny</value>
+  </data>
+  <data name="Settings_Language" xml:space="preserve">
+    <value>Język</value>
+  </data>
+  <data name="Settings_Support" xml:space="preserve">
+    <value>Wsparcie</value>
+  </data>
+  <data name="Settings_HelpFAQ" xml:space="preserve">
+    <value>Pomoc i FAQ</value>
+  </data>
+  <data name="Settings_PrivacyPolicy" xml:space="preserve">
+    <value>Polityka prywatności</value>
+  </data>
+  <data name="Settings_About" xml:space="preserve">
+    <value>O aplikacji</value>
+  </data>
+  <data name="Settings_DeleteAccount" xml:space="preserve">
+    <value>Usuń konto</value>
+  </data>
+  <data name="Settings_DeleteAccountDescription" xml:space="preserve">
+    <value>Poproś o usunięcie profilu Vamoriq i zsynchronizowanych danych.</value>
+  </data>
+  <data name="Settings_DeleteAccountConfirmTitle" xml:space="preserve">
+    <value>Poprosić o usunięcie konta?</value>
+  </data>
+  <data name="Settings_DeleteAccountConfirmBody" xml:space="preserve">
+    <value>Otworzymy e-mail na support@vamoriq.app, abyś mógł potwierdzić tożsamość. Subskrypcja zostanie anulowana, a dane usunięte w ciągu 30 dni.</value>
+  </data>
+  <data name="Settings_DeleteAccountEmailSubject" xml:space="preserve">
+    <value>Prośba o usunięcie konta</value>
+  </data>
+  <data name="Settings_DeleteAccountEmailBody" xml:space="preserve">
+    <value>Witaj zespole Vamoriq,&#x0A;&#x0A;Proszę o usunięcie mojego konta powiązanego z {0}. Potwierdzam, że chcę usunąć moje dane i anulować aktywne subskrypcje. Mój ostatni identyfikator zamówienia to: ______.&#x0A;&#x0A;Dziękuję!</value>
+  </data>
+  <data name="Settings_SignOut" xml:space="preserve">
+    <value>Wyloguj się</value>
+  </data>
+  <data name="Settings_Version" xml:space="preserve">
+    <value>Wersja {0}</value>
+  </data>
+
+  <data name="AgeGate_Title" xml:space="preserve">
+    <value>Chwila</value>
+  </data>
+  <data name="AgeGate_Header" xml:space="preserve">
+    <value>Czy masz 16 lat lub więcej?</value>
+  </data>
+  <data name="AgeGate_Description" xml:space="preserve">
+    <value>Vamoriq jest przeznaczony dla użytkowników w wieku 16 lat i starszych. Kontynuując, potwierdzasz, że spełniasz ten wymóg.</value>
+  </data>
+  <data name="AgeGate_Confirm" xml:space="preserve">
+    <value>Tak, mam 16 lat lub więcej</value>
+  </data>
+  <data name="AgeGate_Exit" xml:space="preserve">
+    <value>Wyjście</value>
+  </data>
+
+  <data name="Auth_Title" xml:space="preserve">
+    <value>Uwierzytelnianie</value>
+  </data>
+  <data name="Auth_Connecting" xml:space="preserve">
+    <value>Łączenie...</value>
+  </data>
+  <data name="Auth_Failed" xml:space="preserve">
+    <value>Uwierzytelnianie nie powiodło się</value>
+  </data>
+  <data name="Auth_Retry" xml:space="preserve">
+    <value>Spróbuj ponownie</value>
+  </data>
+  <data name="Auth_Back" xml:space="preserve">
+    <value>Wstecz</value>
+  </data>
+  <data name="Auth_LoadingReady" xml:space="preserve">
+    <value>Gotowe</value>
+  </data>
+  <data name="Auth_LoadingOpenBrowser" xml:space="preserve">
+    <value>Otwieramy zabezpieczoną przeglądarkę…</value>
+  </data>
+  <data name="Auth_LoadingCompleting" xml:space="preserve">
+    <value>Kończymy logowanie…</value>
+  </data>
+  <data name="Auth_LoadingSubtitle" xml:space="preserve">
+    <value>Wrócimy do aplikacji, gdy tylko logowanie zostanie zakończone.</value>
+  </data>
+  <data name="Auth_Error_Generic" xml:space="preserve">
+    <value>Coś poszło nie tak. Spróbuj ponownie.</value>
+  </data>
+  <data name="Auth_Error_Provider" xml:space="preserve">
+    <value>Logowanie nie powiodło się: {0}</value>
+  </data>
+  <data name="Auth_Error_NoCode" xml:space="preserve">
+    <value>Nie otrzymaliśmy kodu autoryzacyjnego. Spróbuj ponownie.</value>
+  </data>
+  <data name="Auth_Error_Cancelled" xml:space="preserve">
+    <value>Logowanie zostało anulowane.</value>
+  </data>
+  <data name="Auth_Error_Processing" xml:space="preserve">
+    <value>Wystąpił problem podczas przetwarzania odpowiedzi logowania. Spróbuj ponownie.</value>
+  </data>
+
+  <data name="LegalConsent_Title" xml:space="preserve">
+    <value>Prywatność i zgoda</value>
+  </data>
+  <data name="LegalConsent_Description" xml:space="preserve">
+    <value>Używamy analityki, aby ulepszyć aplikację. Możesz zmienić swoją zgodę w dowolnym momencie.</value>
+  </data>
+  <data name="LegalConsent_AllowAnalytics" xml:space="preserve">
+    <value>Zezwól na śledzenie analityczne</value>
+  </data>
+  <data name="LegalConsent_AllowCrash" xml:space="preserve">
+    <value>Zezwól na raporty awarii</value>
+  </data>
+  <data name="LegalConsent_Save" xml:space="preserve">
+    <value>Zapisz</value>
+  </data>
+  <data name="LegalConsent_PrivacyPolicy" xml:space="preserve">
+    <value>Polityka prywatności</value>
+  </data>
+  <data name="LegalConsent_TermsOfUse" xml:space="preserve">
+    <value>Warunki użytkowania</value>
+  </data>
+  <data name="LegalConsent_Footer" xml:space="preserve">
+    <value>Możesz zmienić te ustawienia w dowolnym momencie w Ustawieniach.</value>
+  </data>
+  <data name="LegalConsent_PreferencesUpdated" xml:space="preserve">
+    <value>Preferencje zaktualizowane</value>
+  </data>
+
+  <data name="Common_Back" xml:space="preserve">
+    <value>Wstecz</value>
+  </data>
+  <data name="Common_Share" xml:space="preserve">
+    <value>Udostępnij</value>
+  </data>
+
+  <data name="Welcome_AppTitle" xml:space="preserve">
+    <value>Poczuj się jak w domu w nowym mieście</value>
+  </data>
+  <data name="Welcome_AppDescription" xml:space="preserve">
+    <value>Codzienne misje, które pomagają odkrywać, nawiązywać kontakty i budować życie, które kochasz</value>
+  </data>
+  <data name="Welcome_Bullet1_Mission" xml:space="preserve">
+    <value>Jedna misja dziennie — zawsze wykonalna</value>
+  </data>
+  <data name="Welcome_Bullet2_Mission" xml:space="preserve">
+    <value>Odkrywaj swoją okolicę jak miejscowy</value>
+  </data>
+  <data name="Welcome_Bullet3_Mission" xml:space="preserve">
+    <value>Buduj serie, buduj relacje</value>
+  </data>
+  <data name="Welcome_NoLoginRequired" xml:space="preserve">
+    <value>Bez logowania</value>
+  </data>
+  <data name="Welcome_DailyChallenge" xml:space="preserve">
+    <value>Twoje codzienne wyzwanie czeka</value>
+  </data>
+  <data name="Welcome_Subtitle" xml:space="preserve">
+    <value>Codzienne wyzwania dla ekspatów</value>
+  </data>
+
+  <data name="Mission_Title" xml:space="preserve">
+    <value>Dzisiejsza misja</value>
+  </data>
+  <data name="Mission_Subtitle" xml:space="preserve">
+    <value>Krok bliżej do poczucia się jak w domu</value>
+  </data>
+  <data name="Mission_GetToday" xml:space="preserve">
+    <value>Pobierz dzisiejszą misję</value>
+  </data>
+  <data name="Mission_ViewMission" xml:space="preserve">
+    <value>Zobacz misję</value>
+  </data>
+  <data name="Mission_ReadyForChallenge" xml:space="preserve">
+    <value>Gotowy na dzisiejsze wyzwanie?</value>
+  </data>
+  <data name="Mission_AllDone" xml:space="preserve">
+    <value>Wszystko zrobione na dziś!</value>
+  </data>
+  <data name="Mission_ComeBackTomorrow" xml:space="preserve">
+    <value>Wróć jutro po kolejną misję</value>
+  </data>
+  <data name="Mission_OverdueTitle" xml:space="preserve">
+    <value>Wczorajsza misja jest nadal otwarta</value>
+  </data>
+  <data name="Mission_FinishYesterday" xml:space="preserve">
+    <value>Dokończ wczorajszą misję</value>
+  </data>
+  <data name="Mission_SkipGetToday" xml:space="preserve">
+    <value>Pomiń i pobierz dzisiejszą</value>
+  </data>
+  <data name="Mission_Complete" xml:space="preserve">
+    <value>Misja ukończona</value>
+  </data>
+  <data name="Mission_CompleteTitle" xml:space="preserve">
+    <value>Misja ukończona!</value>
+  </data>
+  <data name="Mission_CompleteYourMission" xml:space="preserve">
+    <value>Ukończ swoją misję</value>
+  </data>
+  <data name="Mission_ProofPlaceholder" xml:space="preserve">
+    <value>Podziel się wrażeniami (min 10 znaków)...</value>
+  </data>
+  <data name="Mission_AttachPhoto" xml:space="preserve">
+    <value>Dołącz zdjęcie</value>
+  </data>
+  <data name="Mission_PhotoAttached" xml:space="preserve">
+    <value>Zdjęcie dołączone</value>
+  </data>
+  <data name="Mission_Steps" xml:space="preserve">
+    <value>Kroki</value>
+  </data>
+  <data name="Mission_SeeProgress" xml:space="preserve">
+    <value>Zobacz postępy</value>
+  </data>
+  <data name="Mission_StreakDays" xml:space="preserve">
+    <value>{0} dni z rzędu</value>
+  </data>
+  <data name="Mission_DayStreak" xml:space="preserve">
+    <value>dni z rzędu</value>
+  </data>
+  <data name="Mission_StreakFormat" xml:space="preserve">
+    <value>Seria: {0} dni</value>
+  </data>
+  <data name="Mission_CurrentStreak" xml:space="preserve">
+    <value>Aktualna seria: {0} dni</value>
+  </data>
+  <data name="Mission_NoMissionsAvailable" xml:space="preserve">
+    <value>Brak dostępnych misji. Sprawdź później!</value>
+  </data>
+  <data name="Mission_AddPhoto" xml:space="preserve">
+    <value>Dodaj zdjęcie</value>
+  </data>
+  <data name="Mission_TakePhoto" xml:space="preserve">
+    <value>Zrób zdjęcie</value>
+  </data>
+  <data name="Mission_ChooseFromGallery" xml:space="preserve">
+    <value>Wybierz z galerii</value>
+  </data>
+  <data name="Mission_NotificationText" xml:space="preserve">
+    <value>Twoja codzienna misja jest gotowa</value>
+  </data>
+  <data name="Mission_SkipReason" xml:space="preserve">
+    <value>Dlaczego chcesz pominąć?</value>
+  </data>
+  <data name="Mission_SkipTooBusy" xml:space="preserve">
+    <value>Zbyt zajęty</value>
+  </data>
+  <data name="Mission_SkipNotInterested" xml:space="preserve">
+    <value>Nie zainteresowany</value>
+  </data>
+  <data name="Mission_SkipNotSafe" xml:space="preserve">
+    <value>Nie czułem się bezpiecznie</value>
+  </data>
+  <data name="Mission_SkipTechnical" xml:space="preserve">
+    <value>Problem techniczny</value>
+  </data>
+  <data name="Mission_SkipOther" xml:space="preserve">
+    <value>Inne</value>
+  </data>
+
+  <data name="Progress_Title" xml:space="preserve">
+    <value>Postępy</value>
+  </data>
+  <data name="Progress_Current" xml:space="preserve">
+    <value>Bieżąca</value>
+  </data>
+  <data name="Progress_Longest" xml:space="preserve">
+    <value>Najdłuższa</value>
+  </data>
+  <data name="Progress_Total" xml:space="preserve">
+    <value>Łącznie</value>
+  </data>
+  <data name="Progress_Empty" xml:space="preserve">
+    <value>Brak ukończonych misji</value>
+  </data>
+  <data name="Progress_EmptyDescription" xml:space="preserve">
+    <value>Ukończ pierwszą misję, aby zobaczyć swoje postępy</value>
+  </data>
+
+  <data name="Settings_YourCity" xml:space="preserve">
+    <value>Twoje miasto</value>
+  </data>
+  <data name="Settings_CityPlaceholder" xml:space="preserve">
+    <value>Wpisz swoje miasto (dla spersonalizowanych misji)</value>
+  </data>
+  <data name="Settings_DailyReminder" xml:space="preserve">
+    <value>Codzienne przypomnienie</value>
+  </data>
+  <data name="Settings_SelectLanguage" xml:space="preserve">
+    <value>Wybierz język</value>
+  </data>
+
+  <data name="Language_English" xml:space="preserve">
+    <value>Angielski</value>
+  </data>
+  <data name="Language_Russian" xml:space="preserve">
+    <value>Rosyjski</value>
+  </data>
+  <data name="Language_Spanish" xml:space="preserve">
+    <value>Hiszpański</value>
+  </data>
+  <data name="Language_Italian" xml:space="preserve">
+    <value>Włoski</value>
+  </data>
+  <data name="Language_German" xml:space="preserve">
+    <value>Niemiecki</value>
+  </data>
+  <data name="Language_French" xml:space="preserve">
+    <value>Francuski</value>
+  </data>
+  <data name="Language_Polish" xml:space="preserve">
+    <value>Polski</value>
+  </data>
+</root>

@@ -1,0 +1,572 @@
+[
+  {
+    "id": "nc_social_001",
+    "baseTitle": "Cafe Conversation Starter",
+    "baseDescription": "Visit a local cafe and have a small interaction — order something new, ask the barista what they recommend, or compliment someone's drink choice. Even a two-minute chat makes a place feel more familiar.",
+    "baseInstructions": [
+      "Pick a cafe within walking distance that looks inviting.",
+      "Order something and take a seat at the bar or a communal table.",
+      "Start with something easy — ask what they recommend or what's popular.",
+      "Try to learn one thing about the cafe or the person you spoke to.",
+      "Thank them before you leave."
+    ],
+    "category": "Social",
+    "difficulty": "Easy",
+    "goalTrack": "NewCity",
+    "estimatedMinutes": 20,
+    "tags": ["cafe", "conversation", "neighborhood"],
+    "proofSuggestion": "A photo of your drink at the cafe, or share one thing you learned.",
+    "tier": "strong"
+  },
+  {
+    "id": "nc_explore_001",
+    "baseTitle": "Neighborhood Market Discovery",
+    "baseDescription": "Find a small local shop or market nearby and buy one thing you've never tried before. Ask the vendor about it — where it's from, how to use it. Markets are where the heartbeat of a neighborhood lives.",
+    "baseInstructions": [
+      "Search for a local market or small shop nearby.",
+      "Browse without rushing — notice what's unique or different.",
+      "Pick one item that's new to you or that locals seem to love.",
+      "Ask the vendor about the item.",
+      "Enjoy your find at home or share it with someone."
+    ],
+    "category": "Explore",
+    "difficulty": "Easy",
+    "goalTrack": "NewCity",
+    "estimatedMinutes": 20,
+    "tags": ["market", "local food", "explore"],
+    "proofSuggestion": "A photo of the item you bought, or the market stall that caught your eye.",
+    "tier": "strong"
+  },
+  {
+    "id": "nc_comm_001",
+    "baseTitle": "Ask for a Recommendation",
+    "baseDescription": "Ask a friendly-looking stranger or shopkeeper for their favorite food spot in the area. People love sharing their favorites, and you'll discover places no guidebook will mention.",
+    "baseInstructions": [
+      "Choose a relaxed spot — a shop, a park, a street with foot traffic.",
+      "Approach someone approachable and mention you're new here.",
+      "Ask for their go-to food spot or restaurant.",
+      "Write down the name so you remember it.",
+      "Thank them warmly."
+    ],
+    "category": "Communicate",
+    "difficulty": "Easy",
+    "goalTrack": "NewCity",
+    "estimatedMinutes": 10,
+    "tags": ["recommendation", "conversation", "food"],
+    "proofSuggestion": "Share the recommendation you received.",
+    "tier": "strong"
+  },
+  {
+    "id": "nc_explore_002",
+    "baseTitle": "Walk a New Route",
+    "baseDescription": "Take a different path through your neighborhood — a street you haven't been down, an alley that looks interesting. New routes reveal hidden layers of a city.",
+    "baseInstructions": [
+      "Pick a direction you don't usually go and start walking.",
+      "Leave your phone map off for at least part of the walk.",
+      "Notice three things that surprise or delight you.",
+      "Take a photo of your favorite discovery.",
+      "Walk for at least 15 minutes before heading back."
+    ],
+    "category": "Explore",
+    "difficulty": "Easy",
+    "goalTrack": "NewCity",
+    "estimatedMinutes": 20,
+    "tags": ["walk", "discover", "neighborhood"],
+    "proofSuggestion": "A photo of something unexpected you found on your walk.",
+    "tier": "strong"
+  },
+  {
+    "id": "nc_social_003",
+    "baseTitle": "Park Hello",
+    "baseDescription": "Visit a local park and say hello to someone — a dog walker, someone on a bench, a parent with kids. A wave or a smile goes a long way in making a place feel like home.",
+    "baseInstructions": [
+      "Head to the nearest park or green space.",
+      "Walk around and notice who's there.",
+      "Say hello, comment on the weather, or compliment their dog.",
+      "If the conversation flows, great. If not, that's fine too.",
+      "Sit for a few minutes and enjoy the space."
+    ],
+    "category": "Social",
+    "difficulty": "Easy",
+    "goalTrack": "NewCity",
+    "estimatedMinutes": 20,
+    "tags": ["park", "hello", "friendly"],
+    "proofSuggestion": "A photo of the park, or share a brief moment from your visit.",
+    "tier": "strong"
+  },
+  {
+    "id": "nc_explore_003",
+    "baseTitle": "Find Your Coffee Spot",
+    "baseDescription": "Every local has their coffee spot. Today, start finding yours. Visit a coffee shop you haven't tried and see if it feels like home.",
+    "baseInstructions": [
+      "Search for an independent coffee shop near you.",
+      "Go in, order your usual drink, and pay attention to the vibe.",
+      "Notice the regulars, the music, the decor.",
+      "If the barista seems friendly, ask what's popular.",
+      "Rate the experience — is this your new spot?"
+    ],
+    "category": "Explore",
+    "difficulty": "Easy",
+    "goalTrack": "NewCity",
+    "estimatedMinutes": 20,
+    "tags": ["coffee", "neighborhood", "routine"],
+    "proofSuggestion": "A photo of your drink at the new coffee spot, with a quick rating.",
+    "tier": "strong"
+  },
+  {
+    "id": "nc_comm_002",
+    "baseTitle": "Shopkeeper Story",
+    "baseDescription": "Visit a local shop and ask the owner about the neighborhood. Small business owners are often the memory of a place — they know stories no guidebook tells.",
+    "baseInstructions": [
+      "Find a shop that looks like it's been around for a while.",
+      "Browse naturally, then start a conversation.",
+      "Ask how long they've been here, or what the area is known for.",
+      "Listen actively — you might learn something surprising.",
+      "Buy something small as a thank-you."
+    ],
+    "category": "Communicate",
+    "difficulty": "Easy",
+    "goalTrack": "NewCity",
+    "estimatedMinutes": 15,
+    "tags": ["shopkeeper", "history", "local"],
+    "proofSuggestion": "A photo of the shop, or share one story you learned.",
+    "tier": "strong"
+  },
+  {
+    "id": "nc_explore_004",
+    "baseTitle": "Bookstore or Gallery Browse",
+    "baseDescription": "Find a local bookstore, gallery, or cultural spot and spend some time browsing. These spaces attract interesting people and reveal a lot about the soul of a city.",
+    "baseInstructions": [
+      "Search for an independent bookstore, gallery, or cultural spot nearby.",
+      "Walk in with no agenda — just browse and explore.",
+      "Pick up something that catches your eye.",
+      "If there's a staff member around, ask what they recommend.",
+      "Spend at least 15 minutes soaking in the atmosphere."
+    ],
+    "category": "Explore",
+    "difficulty": "Easy",
+    "goalTrack": "NewCity",
+    "estimatedMinutes": 20,
+    "tags": ["bookstore", "culture", "browse"],
+    "proofSuggestion": "A photo of something that caught your eye, or the name of a book or piece you liked.",
+    "tier": "strong"
+  },
+  {
+    "id": "nc_explore_005",
+    "baseTitle": "Street Art Safari",
+    "baseDescription": "Hunt for street art, murals, and creative expressions in your area. It's a great excuse for a walk, and you'll see your neighborhood through a different lens.",
+    "baseInstructions": [
+      "Pick a neighborhood to explore on foot.",
+      "Look for murals, graffiti, stickers, installations.",
+      "Photograph at least three pieces that catch your eye.",
+      "Try to find out who made them or what they mean.",
+      "Pick your favorite and share why it resonated."
+    ],
+    "category": "Explore",
+    "difficulty": "Easy",
+    "goalTrack": "NewCity",
+    "estimatedMinutes": 25,
+    "tags": ["street art", "explore", "photography"],
+    "proofSuggestion": "Photos of your favorite street art finds.",
+    "tier": "strong"
+  },
+  {
+    "id": "nc_comm_003",
+    "baseTitle": "Postcard from Your New City",
+    "baseDescription": "Write a postcard — real or digital — about your new city to someone back home. Putting your experience into words helps you notice what you're already starting to love.",
+    "baseInstructions": [
+      "Find a postcard at a local shop, or open a notes app.",
+      "Write about your new city — what you've noticed, what surprised you.",
+      "Include at least one specific detail — a smell, a sound, a color.",
+      "Send it to a friend or family member.",
+      "Keep a copy for yourself as a time capsule."
+    ],
+    "category": "Communicate",
+    "difficulty": "Easy",
+    "goalTrack": "NewCity",
+    "estimatedMinutes": 15,
+    "tags": ["postcard", "reflection", "writing"],
+    "proofSuggestion": "A photo of the postcard, or share a paragraph from what you wrote.",
+    "tier": "strong"
+  },
+  {
+    "id": "nc_fun_008",
+    "baseTitle": "Order Something You Can't Pronounce",
+    "baseDescription": "Go to a restaurant or bakery and order something you've never heard of. Point at the menu, ask what it is, and try it. Some of the best meals start with 'I have no idea what this is.'",
+    "baseInstructions": [
+      "Find a restaurant, bakery, or food stall with unfamiliar options.",
+      "Pick something you can't pronounce or don't recognize.",
+      "Ask the staff what it is and how it's eaten.",
+      "Try it with an open mind.",
+      "Rate it — would you order it again?"
+    ],
+    "category": "Fun",
+    "difficulty": "Easy",
+    "goalTrack": "NewCity",
+    "estimatedMinutes": 20,
+    "tags": ["food", "adventure", "surprise"],
+    "proofSuggestion": "A photo of what you ordered and a one-sentence verdict.",
+    "tier": "strong"
+  },
+  {
+    "id": "nc_explore_012",
+    "baseTitle": "Find the Quietest Spot",
+    "baseDescription": "Every neighborhood has a hidden quiet spot — a courtyard, a bench behind a building, a corner of a park nobody uses. Find yours today.",
+    "baseInstructions": [
+      "Walk your neighborhood with the goal of finding the most peaceful spot.",
+      "Check side streets, inner courtyards, park edges, church gardens.",
+      "When you find a candidate, sit there for at least 5 minutes.",
+      "Notice what makes it calm — the sounds, the light, the view.",
+      "Remember where it is for when you need it."
+    ],
+    "category": "Explore",
+    "difficulty": "Easy",
+    "goalTrack": "NewCity",
+    "estimatedMinutes": 20,
+    "tags": ["quiet", "mindful", "neighborhood"],
+    "proofSuggestion": "A photo of the quiet spot you found.",
+    "tier": "strong"
+  },
+  {
+    "id": "nc_social_007",
+    "baseTitle": "Compliment a Stranger",
+    "baseDescription": "Give one genuine compliment to a stranger today. Their shoes, their garden, their dog, their smile. It takes three seconds and can make two people's day better.",
+    "baseInstructions": [
+      "Go for a short walk in your neighborhood.",
+      "Notice something genuinely nice about someone you pass.",
+      "Say it out loud — keep it simple and warm.",
+      "Enjoy the reaction. Most people light up.",
+      "Notice how it made you feel too."
+    ],
+    "category": "Social",
+    "difficulty": "Easy",
+    "goalTrack": "NewCity",
+    "estimatedMinutes": 10,
+    "tags": ["compliment", "social", "kindness"],
+    "proofSuggestion": "Share what you complimented and how the person reacted.",
+    "tier": "strong"
+  },
+  {
+    "id": "nc_fun_009",
+    "baseTitle": "Photo Tour of Your Street",
+    "baseDescription": "Grab your phone and create a mini photo tour of your own street. Photograph the details you usually walk past — doors, signs, plants, textures. You'll start seeing your street with fresh eyes.",
+    "baseInstructions": [
+      "Step outside with your phone camera ready.",
+      "Walk slowly down your street, photographing anything that catches your eye.",
+      "Capture at least 10 photos — focus on details, not just buildings.",
+      "Pick your 5 favorites.",
+      "Share the collection with someone or keep it as a photo essay."
+    ],
+    "category": "Fun",
+    "difficulty": "Easy",
+    "goalTrack": "NewCity",
+    "estimatedMinutes": 20,
+    "tags": ["photography", "street", "creative"],
+    "proofSuggestion": "Your favorite 3 photos from the tour.",
+    "tier": "strong"
+  },
+  {
+    "id": "nc_explore_013",
+    "baseTitle": "Bench with a View",
+    "baseDescription": "Find a bench somewhere in your city with a nice view — a river, a skyline, a busy square — and just sit there for 10 minutes watching the world go by.",
+    "baseInstructions": [
+      "Walk to a spot with an interesting view.",
+      "Find a bench and sit down. No phone for 10 minutes.",
+      "Watch people, notice the sounds, feel the air.",
+      "Think about one thing you like about this place.",
+      "Take a photo of the view before you leave."
+    ],
+    "category": "Explore",
+    "difficulty": "Easy",
+    "goalTrack": "NewCity",
+    "estimatedMinutes": 15,
+    "tags": ["bench", "view", "mindful"],
+    "proofSuggestion": "A photo of the view from your bench.",
+    "tier": "strong"
+  },
+  {
+    "id": "nc_explore_006",
+    "baseTitle": "Visit Your Local Library",
+    "baseDescription": "Libraries are more than books — they're community hubs. Visit yours, walk through the space, and see what's happening. You might find an event board, a reading group, or a friendly librarian.",
+    "baseInstructions": [
+      "Find the nearest public library and head over.",
+      "Walk through the space — check out different sections.",
+      "Sign up for a library card if you don't have one.",
+      "Ask a librarian about upcoming events.",
+      "Pick up a book or a flyer on your way out."
+    ],
+    "category": "Explore",
+    "difficulty": "Easy",
+    "goalTrack": "NewCity",
+    "estimatedMinutes": 25,
+    "tags": ["library", "community", "reading"],
+    "proofSuggestion": "A photo of the library or your new library card.",
+    "tier": "medium"
+  },
+  {
+    "id": "nc_fun_003",
+    "baseTitle": "Cuisine You've Never Tried",
+    "baseDescription": "Pick a cuisine you've never tasted and find a restaurant that serves it. Ask the server to recommend their best dish for a first-timer.",
+    "baseInstructions": [
+      "Think of a cuisine you've never tried.",
+      "Find a local restaurant that serves it.",
+      "Ask the server to recommend their best dish for someone new.",
+      "Eat slowly, notice the flavors.",
+      "Rate the experience — would you come back?"
+    ],
+    "category": "Fun",
+    "difficulty": "Easy",
+    "goalTrack": "NewCity",
+    "estimatedMinutes": 30,
+    "tags": ["cuisine", "food", "adventure"],
+    "proofSuggestion": "A photo of the dish you tried and a one-sentence review.",
+    "tier": "medium"
+  },
+  {
+    "id": "nc_explore_007",
+    "baseTitle": "Museum or Gallery Wander",
+    "baseDescription": "Explore a local museum or art gallery. Many have free or low-cost admission. Walk through, let something catch your attention, and read about it.",
+    "baseInstructions": [
+      "Find a museum or gallery near you — check for free days.",
+      "Walk through without rushing.",
+      "Read about one exhibit or artwork in detail.",
+      "Strike up a conversation with another visitor if the moment is right.",
+      "Pick your favorite piece and remember why."
+    ],
+    "category": "Explore",
+    "difficulty": "Easy",
+    "goalTrack": "NewCity",
+    "estimatedMinutes": 30,
+    "tags": ["museum", "gallery", "culture"],
+    "proofSuggestion": "A photo of your favorite exhibit or artwork.",
+    "tier": "medium"
+  },
+  {
+    "id": "nc_explore_008",
+    "baseTitle": "Farmers Market Morning",
+    "baseDescription": "Visit a local farmers market and soak in the sights and flavors. Chat with a vendor about their products and buy something fresh.",
+    "baseInstructions": [
+      "Find out when and where the nearest farmers market takes place.",
+      "Go early for the best atmosphere.",
+      "Walk through every row before buying.",
+      "Chat with at least one vendor about their products.",
+      "Buy something fresh and enjoy it today."
+    ],
+    "category": "Explore",
+    "difficulty": "Easy",
+    "goalTrack": "NewCity",
+    "estimatedMinutes": 25,
+    "tags": ["market", "farmers", "local food"],
+    "proofSuggestion": "A photo of the market or your haul.",
+    "tier": "medium"
+  },
+  {
+    "id": "nc_comm_005",
+    "baseTitle": "Hidden Gem Hunt",
+    "baseDescription": "Ask a local for a hidden gem restaurant recommendation. Then go there. The best places are always passed along by word of mouth.",
+    "baseInstructions": [
+      "Ask someone local for a food spot that tourists don't know about.",
+      "Write down the name and address.",
+      "Go there while it's still fresh in your mind.",
+      "Order what the recommender suggested, or ask for the house favorite.",
+      "Report back to the person who recommended it."
+    ],
+    "category": "Communicate",
+    "difficulty": "Medium",
+    "goalTrack": "NewCity",
+    "estimatedMinutes": 30,
+    "tags": ["hidden gem", "recommendation", "food"],
+    "proofSuggestion": "A photo of the dish at the hidden gem, and who recommended it.",
+    "tier": "medium"
+  },
+  {
+    "id": "nc_explore_010",
+    "baseTitle": "Oldest Building in the Neighborhood",
+    "baseDescription": "Find the oldest building in your neighborhood and learn its story. Knowing what came before you helps you feel rooted.",
+    "baseInstructions": [
+      "Research or ask around to find the oldest building nearby.",
+      "Walk to it and take a good look — the architecture, the materials.",
+      "Look for a plaque, a sign, or any clue about its history.",
+      "Take a photo and write down what you learned.",
+      "Share the story with someone."
+    ],
+    "category": "Explore",
+    "difficulty": "Easy",
+    "goalTrack": "NewCity",
+    "estimatedMinutes": 20,
+    "tags": ["history", "architecture", "neighborhood"],
+    "proofSuggestion": "A photo of the building and a brief note about its history.",
+    "tier": "medium"
+  },
+  {
+    "id": "nc_explore_011",
+    "baseTitle": "Best Sunset Viewpoint",
+    "baseDescription": "Find the best spot to watch the sunset in your city. Once you find your spot, you'll come back again and again.",
+    "baseInstructions": [
+      "Ask locals or search online for sunset viewpoints near you.",
+      "Head there about 30 minutes before sunset.",
+      "Find a comfortable spot and settle in.",
+      "Watch the full sunset — notice how the light changes the city.",
+      "Take a photo at the best moment."
+    ],
+    "category": "Explore",
+    "difficulty": "Easy",
+    "goalTrack": "NewCity",
+    "estimatedMinutes": 30,
+    "tags": ["sunset", "viewpoint", "relax"],
+    "proofSuggestion": "A photo of the sunset from your viewpoint.",
+    "tier": "medium"
+  },
+  {
+    "id": "nc_fun_006",
+    "baseTitle": "Map Your Favorite Spots",
+    "baseDescription": "Create a personal map of your favorite local spots so far. Seeing them all together makes your city feel less foreign and more like home.",
+    "baseInstructions": [
+      "Open a map app or grab a paper map.",
+      "Mark every place you've enjoyed so far.",
+      "Add a short note for each.",
+      "Notice any patterns — is there a part of the city you're drawn to?",
+      "Share the map with a friend or save it."
+    ],
+    "category": "Fun",
+    "difficulty": "Easy",
+    "goalTrack": "NewCity",
+    "estimatedMinutes": 15,
+    "tags": ["map", "favorites", "reflection"],
+    "proofSuggestion": "A screenshot of your personal map with notes.",
+    "tier": "medium"
+  },
+  {
+    "id": "nc_comm_006",
+    "baseTitle": "Mini-Guide for Your Neighborhood",
+    "baseDescription": "Write a short personal guide to your neighborhood — top 5 spots, your favorite walk, the best time to visit. Writing it helps you appreciate what you've already found.",
+    "baseInstructions": [
+      "Open a notes app or grab paper.",
+      "List your top 5 recommendations for someone new here.",
+      "For each, write one sentence about why you like it.",
+      "Add a suggested walk route connecting two or more picks.",
+      "Share the guide with a friend or online community."
+    ],
+    "category": "Communicate",
+    "difficulty": "Easy",
+    "goalTrack": "NewCity",
+    "estimatedMinutes": 20,
+    "tags": ["writing", "guide", "neighborhood"],
+    "proofSuggestion": "Share your mini-guide text or a photo of it.",
+    "tier": "medium"
+  },
+  {
+    "id": "nc_social_008",
+    "baseTitle": "Say Thank You in the Local Language",
+    "baseDescription": "Learn how to say 'thank you', 'good morning', and 'excuse me' in the local language (or dialect), and use all three today during your normal routine.",
+    "baseInstructions": [
+      "Look up or ask someone for the local way to say thank you, good morning, and excuse me.",
+      "Practice saying them out loud a few times.",
+      "Use all three during your day — at a shop, on the street, at a cafe.",
+      "Notice how people react when you try.",
+      "Write down any new words you picked up."
+    ],
+    "category": "Social",
+    "difficulty": "Easy",
+    "goalTrack": "NewCity",
+    "estimatedMinutes": 10,
+    "tags": ["language", "local", "basics"],
+    "proofSuggestion": "Share the phrases you learned and one reaction you got.",
+    "tier": "strong"
+  },
+  {
+    "id": "nc_explore_014",
+    "baseTitle": "Morning Routine Walk",
+    "baseDescription": "Walk through your neighborhood in the morning and notice what's different from the afternoon. Different times reveal different rhythms — the bakery that opens early, the joggers, the school drop-offs.",
+    "baseInstructions": [
+      "Set out for a 15-minute walk in the morning (before 10am).",
+      "Notice what's open, who's out, what the energy feels like.",
+      "Compare it mentally to the same streets in the afternoon.",
+      "Find one thing that only exists in the morning — a smell, a routine, a face.",
+      "Take a photo that captures the morning feeling."
+    ],
+    "category": "Explore",
+    "difficulty": "Easy",
+    "goalTrack": "NewCity",
+    "estimatedMinutes": 15,
+    "tags": ["morning", "routine", "neighborhood"],
+    "proofSuggestion": "A photo that captures your neighborhood's morning energy.",
+    "tier": "medium"
+  },
+  {
+    "id": "nc_social_002",
+    "baseTitle": "Join a Local Event or Meetup",
+    "baseDescription": "Find a free local event or meetup and show up. You don't need to be the life of the party — just being there and saying hello is enough.",
+    "baseInstructions": [
+      "Search online for free events in your city this week.",
+      "Pick one that matches your interests, even loosely.",
+      "Show up a few minutes early.",
+      "Introduce yourself to at least one person.",
+      "Stay for at least the first half."
+    ],
+    "category": "Social",
+    "difficulty": "Medium",
+    "goalTrack": "NewCity",
+    "estimatedMinutes": 60,
+    "tags": ["meetup", "event", "community"],
+    "proofSuggestion": "A photo from the event, or share who you met.",
+    "tier": "backup"
+  },
+  {
+    "id": "nc_social_004",
+    "baseTitle": "Cook and Share with a Neighbor",
+    "baseDescription": "Cook a dish and bring a small portion to a neighbor with a friendly note. Food is one of the most universal ways to connect.",
+    "baseInstructions": [
+      "Pick a recipe — something from home or a local dish.",
+      "Cook the dish.",
+      "Pack a small portion and bring it to a neighbor.",
+      "If they're home, introduce yourself.",
+      "If not, leave it with a note."
+    ],
+    "category": "Social",
+    "difficulty": "Medium",
+    "goalTrack": "NewCity",
+    "estimatedMinutes": 60,
+    "tags": ["cooking", "neighbor", "sharing"],
+    "proofSuggestion": "A photo of the dish you cooked.",
+    "tier": "backup"
+  },
+  {
+    "id": "nc_fun_001",
+    "baseTitle": "Random Stop Adventure",
+    "baseDescription": "Take a bus or metro to a stop you've never been to and explore whatever's around for 15 minutes.",
+    "baseInstructions": [
+      "Head to the nearest public transport stop.",
+      "Ride 5-10 stops in a direction you don't know.",
+      "Get off and walk around for at least 15 minutes.",
+      "Find one thing worth remembering.",
+      "Make your way back using a different route."
+    ],
+    "category": "Fun",
+    "difficulty": "Medium",
+    "goalTrack": "NewCity",
+    "estimatedMinutes": 45,
+    "tags": ["transport", "adventure", "random"],
+    "proofSuggestion": "A photo from the stop you explored.",
+    "tier": "backup"
+  },
+  {
+    "id": "nc_social_006",
+    "baseTitle": "Volunteer for a Local Cause",
+    "baseDescription": "Find a local volunteer opportunity and give a few hours. Volunteering connects you with people who care about the same things.",
+    "baseInstructions": [
+      "Search for volunteer opportunities in your city.",
+      "Sign up for a one-time event or short shift.",
+      "Show up ready to help.",
+      "Talk to the other volunteers.",
+      "Reflect on how it felt."
+    ],
+    "category": "Social",
+    "difficulty": "Bold",
+    "goalTrack": "NewCity",
+    "estimatedMinutes": 120,
+    "tags": ["volunteer", "community", "giving back"],
+    "proofSuggestion": "A photo from the volunteer event, or share what cause you helped with.",
+    "tier": "backup"
+  }
+]

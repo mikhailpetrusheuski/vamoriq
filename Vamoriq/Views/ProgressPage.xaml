@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="Vamoriq.Views.ProgressPage"
+             xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:Vamoriq.ViewModels"
+             xmlns:models="clr-namespace:Vamoriq.Models;assembly=Vamoriq.Models"
+             xmlns:loc="clr-namespace:Vamoriq.Extensions"
+             xmlns:resx="clr-namespace:Vamoriq.Resources.Localization"
+             x:Name="Page"
+             Title="{loc:Localize Progress_Title}"
+             BackgroundColor="{AppThemeBinding Light={StaticResource BackgroundLight}, Dark={StaticResource Background}}"
+             NavigationPage.HasNavigationBar="False">
+
+    <StackLayout Style="{StaticResource MainStackLayout}">
+
+        <Label Text="{loc:Localize Progress_Title}"
+               Style="{StaticResource HeaderLabel}"
+               FontSize="34"
+               FontAttributes="Bold"
+               Margin="0,0,0,0" />
+
+        <Grid ColumnDefinitions="*,*,*" ColumnSpacing="12" Margin="0,16,0,24">
+            <Frame Style="{StaticResource CardFrame}" Grid.Column="0" Padding="12">
+                <StackLayout HorizontalOptions="Center" Spacing="4">
+                    <Label Text="{Binding CurrentStreak}"
+                           FontSize="28"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Center"
+                           TextColor="{StaticResource Primary}"/>
+                    <Label Text="{loc:Localize Progress_Current}"
+                           FontSize="12"
+                           HorizontalOptions="Center"
+                           TextColor="{AppThemeBinding Light={StaticResource TextSecondaryLight}, Dark={StaticResource TextSecondary}}"/>
+                </StackLayout>
+            </Frame>
+            <Frame Style="{StaticResource CardFrame}" Grid.Column="1" Padding="12">
+                <StackLayout HorizontalOptions="Center" Spacing="4">
+                    <Label Text="{Binding LongestStreak}"
+                           FontSize="28"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Center"
+                           TextColor="{AppThemeBinding Light={StaticResource TextPrimaryLight}, Dark={StaticResource TextPrimary}}"/>
+                    <Label Text="{loc:Localize Progress_Longest}"
+                           FontSize="12"
+                           HorizontalOptions="Center"
+                           TextColor="{AppThemeBinding Light={StaticResource TextSecondaryLight}, Dark={StaticResource TextSecondary}}"/>
+                </StackLayout>
+            </Frame>
+            <Frame Style="{StaticResource CardFrame}" Grid.Column="2" Padding="12">
+                <StackLayout HorizontalOptions="Center" Spacing="4">
+                    <Label Text="{Binding TotalCompleted}"
+                           FontSize="28"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Center"
+                           TextColor="{AppThemeBinding Light={StaticResource TextPrimaryLight}, Dark={StaticResource TextPrimary}}"/>
+                    <Label Text="{loc:Localize Progress_Total}"
+                           FontSize="12"
+                           HorizontalOptions="Center"
+                           TextColor="{AppThemeBinding Light={StaticResource TextSecondaryLight}, Dark={StaticResource TextSecondary}}"/>
+                </StackLayout>
+            </Frame>
+        </Grid>
+
+        <Frame IsVisible="{Binding HasError}"
+               BackgroundColor="{AppThemeBinding Light=#FFF3F3, Dark=#2A1A1A}"
+               BorderColor="{StaticResource Error}"
+               CornerRadius="8"
+               Padding="12"
+               Margin="0,0,0,12">
+            <Label Text="{Binding ErrorMessage}"
+                   TextColor="{StaticResource Error}"
+                   FontSize="14" />
+        </Frame>
+
+        <CollectionView ItemsSource="{Binding CompletedMissions}"
+                        ItemsLayout="VerticalList"
+                        ItemSizingStrategy="MeasureAllItems"
+                        VerticalOptions="FillAndExpand">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="models:Mission">
+                    <Frame Style="{StaticResource CardFrame}" Margin="0,0,0,12">
+                        <Grid ColumnDefinitions="*,Auto" ColumnSpacing="16">
+                            <StackLayout Grid.Column="0" VerticalOptions="Center" Spacing="4">
+                                <Label Text="{Binding Title}"
+                                       Style="{StaticResource Body}"
+                                       FontAttributes="Bold" />
+                                <Label Text="{Binding MissionLocalDate}"
+                                       Style="{StaticResource Callout}" />
+                            </StackLayout>
+
+                            <Border Grid.Column="1"
+                                    Stroke="{StaticResource Primary}"
+                                    StrokeThickness="1.5"
+                                    BackgroundColor="Transparent"
+                                    Padding="20,8"
+                                    VerticalOptions="Center">
+                                <Border.StrokeShape>
+                                    <RoundRectangle CornerRadius="20" />
+                                </Border.StrokeShape>
+                                <Border.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding Source={x:Reference Page}, Path=BindingContext.ViewMissionCommand}"
+                                                          CommandParameter="{Binding Id}" />
+                                </Border.GestureRecognizers>
+                                <Label Text="{loc:Localize Common_View}"
+                                       TextColor="{StaticResource Primary}"
+                                       FontSize="14"
+                                       FontAttributes="Bold"
+                                       VerticalOptions="Center" />
+                            </Border>
+                        </Grid>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+
+            <CollectionView.EmptyView>
+                <StackLayout Style="{StaticResource EmptyStateContainer}">
+                    <Label Text="🎯" Style="{StaticResource EmptyStateIcon}" />
+                    <Label Text="{loc:Localize Progress_Empty}" Style="{StaticResource EmptyStateTitle}" />
+                    <Label Text="{loc:Localize Progress_EmptyDescription}" Style="{StaticResource EmptyStateDescription}" />
+                </StackLayout>
+            </CollectionView.EmptyView>
+        </CollectionView>
+
+        <Grid IsVisible="{Binding IsBusy}"
+              BackgroundColor="#80000000"
+              InputTransparent="False"
+              Margin="{OnIdiom Phone=-16 0 -16 -12, Tablet=-24 -60 -24 -32, Desktop=-24 -60 -24 -32}">
+            <ActivityIndicator IsRunning="True"
+                               Color="#C49340"
+                               WidthRequest="56"
+                               HeightRequest="56"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center" />
+        </Grid>
+    </StackLayout>
+</ContentPage>

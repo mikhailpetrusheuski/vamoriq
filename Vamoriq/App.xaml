@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Vamoriq"
+             xmlns:converters="clr-namespace:Vamoriq.Converters"
+             x:Class="Vamoriq.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
+                <ResourceDictionary Source="Resources/Styles/AppStyles.xaml" />
+                <ResourceDictionary Source="Resources/Styles/Icons.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+
+            <Style TargetType="Button">
+                <Setter Property="HorizontalOptions" Value="Fill" />
+                <Setter Property="HeightRequest" Value="50" />
+                <Setter Property="Padding" Value="24,16" />
+                <Setter Property="FontSize" Value="17" />
+                <Setter Property="FontAttributes" Value="None" />
+                <Setter Property="FontFamily" Value="OpenSansRegular" />
+            </Style>
+
+            <Style TargetType="StackLayout">
+                <Setter Property="Spacing" Value="16" />
+            </Style>
+            <Style TargetType="Grid">
+                <Setter Property="RowSpacing" Value="12" />
+                <Setter Property="ColumnSpacing" Value="12" />
+            </Style>
+
+            <converters:BoolToStyleConverter x:Key="BoolToStyleConverter" />
+            <converters:BoolToColorConverter x:Key="BoolToColorConverter" />
+            <converters:BoolToIntConverter x:Key="BoolToIntConverter" />
+            <converters:BoolToTextConverter x:Key="BoolToTextConverter" />
+            <converters:FavoriteTextConverter x:Key="FavoriteTextConverter" />
+            <converters:IntToBoolConverter x:Key="IntToBoolConverter" />
+            <converters:InverseBoolConverter x:Key="InverseBoolConverter" />
+            <converters:ThemeColorConverter x:Key="ThemeColorConverter" />
+            <converters:IndexConverter x:Key="IndexConverter" />
+            <converters:IndexToNumberConverter x:Key="IndexToNumberConverter" />
+
+            <FontImageSource x:Key="HomeIcon" Glyph="⚑" Color="#C49340" Size="28" />
+            <FontImageSource x:Key="HistoryIcon" Glyph="⏱" Color="#C49340" Size="28" />
+            <FontImageSource x:Key="SupportIcon" Glyph="⚙" Color="#C49340" Size="28" />
+
+            <Style TargetType="Label">
+                <Setter Property="FontFamily" Value="OpenSansRegular" />
+                <Setter Property="FontSize" Value="16" />
+                <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource TextPrimaryLight}, Dark={StaticResource TextPrimary}}" />
+            </Style>
+
+            <Style TargetType="Entry">
+                <Setter Property="FontFamily" Value="OpenSansRegular" />
+                <Setter Property="FontSize" Value="16" />
+                <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource TextPrimaryLight}, Dark={StaticResource TextPrimary}}" />
+            </Style>
+
+            <Style TargetType="ContentPage">
+                <Setter Property="Padding">
+                    <Setter.Value>
+                        <OnIdiom x:TypeArguments="Thickness">
+                            <OnIdiom.Phone>24,60,24,32</OnIdiom.Phone>
+                            <OnIdiom.Tablet>24,60,24,32</OnIdiom.Tablet>
+                            <OnIdiom.Desktop>24,60,24,32</OnIdiom.Desktop>
+                        </OnIdiom>
+                    </Setter.Value>
+                </Setter>
+                <Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource BackgroundLight}, Dark={StaticResource Background}}" />
+            </Style>
+
+            <Style x:Key="LargeTitle" TargetType="Label">
+                <Setter Property="FontSize" Value="34" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource TextPrimaryLight}, Dark={StaticResource TextPrimary}}" />
+            </Style>
+
+            <Style x:Key="Title1" TargetType="Label">
+                <Setter Property="FontSize" Value="28" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource TextPrimaryLight}, Dark={StaticResource TextPrimary}}" />
+            </Style>
+
+            <Style x:Key="Title2" TargetType="Label">
+                <Setter Property="FontSize" Value="22" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource TextPrimaryLight}, Dark={StaticResource TextPrimary}}" />
+            </Style>
+
+            <Style x:Key="Title3" TargetType="Label">
+                <Setter Property="FontSize" Value="20" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource TextPrimaryLight}, Dark={StaticResource TextPrimary}}" />
+            </Style>
+
+            <Style x:Key="Headline" TargetType="Label">
+                <Setter Property="FontSize" Value="17" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource TextPrimaryLight}, Dark={StaticResource TextPrimary}}" />
+            </Style>
+
+            <Style x:Key="Body" TargetType="Label">
+                <Setter Property="FontSize" Value="17" />
+                <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource TextPrimaryLight}, Dark={StaticResource TextPrimary}}" />
+            </Style>
+
+            <Style x:Key="Callout" TargetType="Label">
+                <Setter Property="FontSize" Value="16" />
+                <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource TextSecondaryLight}, Dark={StaticResource TextSecondary}}" />
+            </Style>
+
+            <Style x:Key="Subhead" TargetType="Label">
+                <Setter Property="FontSize" Value="15" />
+                <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource TextSecondaryLight}, Dark={StaticResource TextSecondary}}" />
+            </Style>
+
+            <Style x:Key="Footnote" TargetType="Label">
+                <Setter Property="FontSize" Value="13" />
+                <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource TextTertiaryLight}, Dark={StaticResource TextTertiary}}" />
+            </Style>
+
+            <Style x:Key="Caption1" TargetType="Label">
+                <Setter Property="FontSize" Value="12" />
+                <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource TextTertiaryLight}, Dark={StaticResource TextTertiary}}" />
+            </Style>
+
+            <Style x:Key="Caption2" TargetType="Label">
+                <Setter Property="FontSize" Value="11" />
+                <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource TextTertiaryLight}, Dark={StaticResource TextTertiary}}" />
+            </Style>
+
+            <Style x:Key="PrimaryButton" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#C49340" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="FontAttributes" Value="None" />
+                <Setter Property="FontFamily" Value="OpenSansSemibold" />
+                <Setter Property="CornerRadius" Value="12" />
+                <Setter Property="Padding" Value="24,16" />
+                <Setter Property="FontSize" Value="17" />
+                <Setter Property="HeightRequest" Value="56" />
+            </Style>
+
+            <Style x:Key="AuthProviderButton" TargetType="Button" BasedOn="{StaticResource PrimaryButton}">
+                <Setter Property="Padding" Value="16,14" />
+                <Setter Property="FontSize" Value="16" />
+                <Setter Property="HeightRequest" Value="52" />
+            </Style>
+
+            <Style x:Key="SecondaryButton" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#FFFFFF" />
+                <Setter Property="TextColor" Value="#C49340" />
+                <Setter Property="BorderColor" Value="#C49340" />
+                <Setter Property="BorderWidth" Value="1" />
+                <Setter Property="FontAttributes" Value="None" />
+                <Setter Property="CornerRadius" Value="12" />
+                <Setter Property="Padding" Value="24,16" />
+                <Setter Property="FontSize" Value="17" />
+                <Setter Property="HeightRequest" Value="56" />
+            </Style>
+
+            <Style x:Key="TertiaryButton" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="Transparent" />
+                <Setter Property="TextColor" Value="#000000" />
+                <Setter Property="BorderColor" Value="Transparent" />
+                <Setter Property="BorderWidth" Value="0" />
+                <Setter Property="FontAttributes" Value="None" />
+                <Setter Property="CornerRadius" Value="0" />
+                <Setter Property="Padding" Value="0" />
+                <Setter Property="FontSize" Value="17" />
+                <Setter Property="HeightRequest" Value="50" />
+                <Setter Property="HorizontalOptions" Value="Start" />
+            </Style>
+
+            <Style x:Key="PrimaryEntry" TargetType="Entry">
+                <Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource SurfaceLight}, Dark={StaticResource Surface}}" />
+                <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource TextPrimaryLight}, Dark={StaticResource TextPrimary}}" />
+                <Setter Property="PlaceholderColor" Value="{AppThemeBinding Light={StaticResource TextSecondaryLight}, Dark={StaticResource TextSecondary}}" />
+                <Setter Property="FontSize" Value="16" />
+            </Style>
+
+            <Style x:Key="CardFrame" TargetType="Frame">
+                <Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource SurfaceLight}, Dark={StaticResource Surface}}" />
+                <Setter Property="BorderColor" Value="Transparent" />
+                <Setter Property="CornerRadius" Value="16" />
+                <Setter Property="Padding" Value="20" />
+                <Setter Property="HasShadow" Value="False" />
+            </Style>
+
+            <Style x:Key="TitleText" TargetType="Label">
+                <Setter Property="FontSize" Value="22" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource TextPrimaryLight}, Dark={StaticResource TextPrimary}}" />
+            </Style>
+
+            <Style x:Key="SubtitleText" TargetType="Label">
+                <Setter Property="FontSize" Value="18" />
+                <Setter Property="FontFamily" Value="OpenSansSemibold" />
+                <Setter Property="FontAttributes" Value="None" />
+                <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource TextPrimaryLight}, Dark={StaticResource TextPrimary}}" />
+            </Style>
+
+            <Style x:Key="BodyText" TargetType="Label">
+                <Setter Property="FontSize" Value="16" />
+                <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource TextPrimaryLight}, Dark={StaticResource TextPrimary}}" />
+            </Style>
+
+            <Style x:Key="CaptionText" TargetType="Label">
+                <Setter Property="FontSize" Value="14" />
+                <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource TextSecondaryLight}, Dark={StaticResource TextSecondary}}" />
+            </Style>
+
+            <Style x:Key="NavigationButton" TargetType="Label">
+                <Setter Property="FontSize" Value="12" />
+                <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource TextSecondaryLight}, Dark={StaticResource TextSecondary}}" />
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+            </Style>
+
+            <Style x:Key="SelectedNavigationButton" TargetType="Label">
+                <Setter Property="FontSize" Value="12" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="TextColor" Value="{StaticResource Primary}" />
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+            </Style>
+
+            <Style x:Key="TextButton" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="Transparent" />
+                <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource TextSecondaryLight}, Dark={StaticResource TextSecondary}}" />
+                <Setter Property="FontSize" Value="16" />
+                <Setter Property="Padding" Value="20,8" />
+                <Setter Property="BorderWidth" Value="0" />
+            </Style>
+
+            <Style x:Key="InputField" TargetType="Entry">
+                <Setter Property="BackgroundColor" Value="#FFFFFF" />
+                <Setter Property="TextColor" Value="#000000" />
+                <Setter Property="PlaceholderColor" Value="#555555" />
+                <Setter Property="FontSize" Value="17" />
+                <Setter Property="Margin" Value="0,8,0,16" />
+                <Setter Property="HeightRequest" Value="50" />
+            </Style>
+
+            <Style x:Key="ChipStyle" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#F0F0F0" />
+                <Setter Property="TextColor" Value="#000000" />
+                <Setter Property="FontSize" Value="15" />
+                <Setter Property="CornerRadius" Value="20" />
+                <Setter Property="Padding" Value="20,8" />
+                <Setter Property="BorderWidth" Value="0" />
+                <Setter Property="HeightRequest" Value="36" />
+            </Style>
+
+            <Style x:Key="CardStyle" TargetType="Frame">
+                <Setter Property="BackgroundColor" Value="#F0F0F0" />
+                <Setter Property="BorderColor" Value="Transparent" />
+                <Setter Property="CornerRadius" Value="16" />
+                <Setter Property="Padding" Value="16" />
+                <Setter Property="HasShadow" Value="False" />
+                <Setter Property="Margin" Value="0,8" />
+            </Style>
+
+            <Style x:Key="ToggleButton" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#F0F0F0" />
+                <Setter Property="TextColor" Value="#000000" />
+                <Setter Property="FontSize" Value="17" />
+                <Setter Property="CornerRadius" Value="25" />
+                <Setter Property="BorderWidth" Value="0" />
+                <Setter Property="HeightRequest" Value="50" />
+                <Setter Property="FontAttributes" Value="None" />
+            </Style>
+
+            <Style x:Key="SelectedToggleButton" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#C49340" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="FontSize" Value="17" />
+                <Setter Property="FontAttributes" Value="None" />
+                <Setter Property="FontFamily" Value="OpenSansSemibold" />
+                <Setter Property="CornerRadius" Value="25" />
+                <Setter Property="BorderWidth" Value="0" />
+                <Setter Property="HeightRequest" Value="50" />
+            </Style>
+
+            <Style x:Key="MainStackLayout" TargetType="StackLayout">
+                <Setter Property="Padding" Value="24,40,24,32" />
+            </Style>
+
+            <Style x:Key="HeaderLabel" TargetType="Label">
+                <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource TextPrimaryLight}, Dark={StaticResource TextPrimary}}" />
+                <Setter Property="HorizontalOptions" Value="Start" />
+            </Style>
+
+            <Style x:Key="SubtitleLabel" TargetType="Label">
+                <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource TextSecondaryLight}, Dark={StaticResource TextSecondary}}" />
+                <Setter Property="HorizontalOptions" Value="Start" />
+                <Setter Property="FontSize" Value="16" />
+                <Setter Property="LineHeight" Value="1.3" />
+            </Style>
+
+            <Style x:Key="SectionTitleLabel" TargetType="Label">
+                <Setter Property="FontSize" Value="20" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource TextPrimaryLight}, Dark={StaticResource TextPrimary}}" />
+            </Style>
+
+            <Style x:Key="OptionLabel" TargetType="Label">
+                <Setter Property="FontSize" Value="16" />
+                <Setter Property="VerticalOptions" Value="Center" />
+                <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource TextPrimaryLight}, Dark={StaticResource TextPrimary}}"/>
+            </Style>
+
+            <Style x:Key="CustomRadioButton" TargetType="RadioButton">
+                <Setter Property="VerticalOptions" Value="Center" />
+            </Style>
+
+            <Style x:Key="ChipButton" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="{AppThemeBinding Light=#F0F0F0, Dark=#3A3A3C}" />
+                <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource TextPrimaryLight}, Dark={StaticResource TextPrimary}}" />
+                <Setter Property="CornerRadius" Value="16" />
+                <Setter Property="FontSize" Value="14" />
+                <Setter Property="Padding" Value="16,8" />
+                <Setter Property="HeightRequest" Value="40" />
+            </Style>
+
+            <Style x:Key="ChipFrame" TargetType="Frame">
+                <Setter Property="BackgroundColor" Value="{AppThemeBinding Light=#F0F0F0, Dark=#3A3A3C}" />
+                <Setter Property="CornerRadius" Value="16" />
+                <Setter Property="HasShadow" Value="False" />
+                <Setter Property="Padding" Value="12,6" />
+                <Setter Property="BorderColor" Value="Transparent" />
+            </Style>
+
+            <Style x:Key="ChipLabel" TargetType="Label">
+                <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource TextPrimaryLight}, Dark={StaticResource TextPrimary}}" />
+                <Setter Property="FontSize" Value="14" />
+                <Setter Property="VerticalOptions" Value="Center" />
+            </Style>
+
+            <Style x:Key="RemoveChipButton" TargetType="Button">
+                <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource TextPrimaryLight}, Dark={StaticResource TextPrimary}}" />
+                <Setter Property="BackgroundColor" Value="Transparent" />
+                <Setter Property="BorderWidth" Value="0" />
+                <Setter Property="Padding" Value="8,0" />
+                <Setter Property="WidthRequest" Value="28" />
+                <Setter Property="HeightRequest" Value="28" />
+                <Setter Property="FontSize" Value="16" />
+            </Style>
+
+            <Style x:Key="InputFieldFrame" TargetType="Frame">
+                <Setter Property="BackgroundColor" Value="{AppThemeBinding Light=#FFFFFF, Dark=#2C2C2E}" />
+                <Setter Property="BorderColor" Value="{AppThemeBinding Light=#E0E0E0, Dark=#3A3A3C}" />
+                <Setter Property="HasShadow" Value="False" />
+                <Setter Property="Padding" Value="12,0" />
+                <Setter Property="CornerRadius" Value="8" />
+                <Setter Property="HeightRequest" Value="50" />
+            </Style>
+
+            <Style x:Key="InputFieldEntry" TargetType="Entry">
+                <Setter Property="VerticalOptions" Value="Center" />
+                <Setter Property="BackgroundColor" Value="Transparent" />
+                <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource TextPrimaryLight}, Dark={StaticResource TextPrimary}}" />
+                <Setter Property="PlaceholderColor" Value="{AppThemeBinding Light=#555555, Dark={StaticResource TextSecondary}}" />
+            </Style>
+
+            <Style x:Key="GenerateButton" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#C49340" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="FontAttributes" Value="None" />
+                <Setter Property="FontFamily" Value="OpenSansSemibold" />
+                <Setter Property="FontSize" Value="18" />
+                <Setter Property="CornerRadius" Value="12" />
+                <Setter Property="MinimumHeightRequest" Value="56" />
+                <Setter Property="HorizontalOptions" Value="Fill" />
+                <Setter Property="Padding" Value="24,16" />
+                <Setter Property="LineBreakMode" Value="WordWrap" />
+                <Setter Property="FontAutoScalingEnabled" Value="True" />
+            </Style>
+
+            <Style x:Key="DisabledButton" TargetType="Button" BasedOn="{StaticResource GenerateButton}">
+                <Setter Property="BackgroundColor" Value="#555555" />
+                <Setter Property="IsEnabled" Value="False" />
+            </Style>
+
+            <Style x:Key="RecipeCard" TargetType="Frame">
+                <Setter Property="BackgroundColor" Value="#FFFFFF" />
+                <Setter Property="HasShadow" Value="False" />
+                <Setter Property="CornerRadius" Value="0" />
+                <Setter Property="Margin" Value="0" />
+                <Setter Property="Padding" Value="0" />
+            </Style>
+
+            <Style x:Key="RecipeContent" TargetType="StackLayout">
+                <Setter Property="Padding" Value="24,20,24,24" />
+                <Setter Property="Spacing" Value="16" />
+            </Style>
+
+            <Style x:Key="RecipeImage" TargetType="Image">
+                <Setter Property="HorizontalOptions" Value="Fill" />
+                <Setter Property="VerticalOptions" Value="Fill" />
+                <Setter Property="Aspect" Value="AspectFit" />
+            </Style>
+
+            <Style x:Key="RecipeImageBorder" TargetType="Border">
+                <Setter Property="StrokeThickness" Value="0" />
+                <Setter Property="BackgroundColor" Value="Transparent" />
+                <Setter Property="HorizontalOptions" Value="Fill" />
+                <Setter Property="VerticalOptions" Value="Start" />
+                <Setter Property="MinimumHeightRequest" Value="220" />
+                <Setter Property="MaximumHeightRequest" Value="520" />
+                <Setter Property="Margin" Value="0,16,0,0" />
+                <Setter Property="StrokeShape">
+                    <Setter.Value>
+                        <RoundRectangle CornerRadius="20"/>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+
+            <Style x:Key="RecipeTitle" TargetType="Label">
+                <Setter Property="FontSize" Value="24" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource TextPrimaryLight}, Dark={StaticResource TextPrimary}}" />
+            </Style>
+
+            <Style x:Key="RecipeDescription" TargetType="Label">
+                <Setter Property="FontSize" Value="15" />
+                <Setter Property="LineHeight" Value="1.4" />
+                <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource TextSecondaryLight}, Dark={StaticResource TextSecondary}}" />
+            </Style>
+
+            <Style x:Key="SectionTitle" TargetType="Label">
+                <Setter Property="FontSize" Value="20" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource TextPrimaryLight}, Dark={StaticResource TextPrimary}}" />
+            </Style>
+
+            <Style x:Key="IngredientItem" TargetType="StackLayout">
+                <Setter Property="Orientation" Value="Horizontal" />
+                <Setter Property="Spacing" Value="12" />
+            </Style>
+
+            <Style x:Key="InstructionItem" TargetType="StackLayout">
+                <Setter Property="Orientation" Value="Horizontal" />
+                <Setter Property="Spacing" Value="12" />
+            </Style>
+
+            <Style x:Key="BulletPoint" TargetType="Label">
+                <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource TextTertiaryLight}, Dark={StaticResource TextTertiary}}" />
+                <Setter Property="FontSize" Value="16" />
+                <Setter Property="VerticalOptions" Value="Start" />
+            </Style>
+
+            <Style x:Key="InstructionNumber" TargetType="Border">
+                <Setter Property="BackgroundColor" Value="#C49340" />
+                <Setter Property="WidthRequest" Value="24" />
+                <Setter Property="HeightRequest" Value="24" />
+                <Setter Property="VerticalOptions" Value="Start" />
+            </Style>
+
+            <Style x:Key="InstructionText" TargetType="Label">
+                <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource TextPrimaryLight}, Dark={StaticResource TextPrimary}}" />
+            </Style>
+
+            <Style x:Key="RecipeActionButton" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#C49340" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="FontAttributes" Value="None" />
+                <Setter Property="FontFamily" Value="OpenSansSemibold" />
+                <Setter Property="FontSize" Value="16" />
+                <Setter Property="CornerRadius" Value="12" />
+                <Setter Property="HeightRequest" Value="48" />
+                <Setter Property="HorizontalOptions" Value="Fill" />
+                <Setter Property="Padding" Value="8,0" />
+            </Style>
+
+            <Style x:Key="SecondaryActionButton" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="Transparent" />
+                <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource TextPrimaryLight}, Dark={StaticResource TextPrimary}}" />
+                <Setter Property="BorderColor" Value="{AppThemeBinding Light=#E0E0E0, Dark={StaticResource Border}}" />
+                <Setter Property="BorderWidth" Value="1" />
+                <Setter Property="FontSize" Value="16" />
+                <Setter Property="CornerRadius" Value="12" />
+                <Setter Property="HeightRequest" Value="48" />
+                <Setter Property="HorizontalOptions" Value="Fill" />
+                <Setter Property="Padding" Value="8,0" />
+            </Style>
+
+            <Style x:Key="PrimaryChipButton" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#C49340" />
+                <Setter Property="FontAttributes" Value="None" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="FontFamily" Value="OpenSansSemibold" />
+                <Setter Property="FontSize" Value="14" />
+                <Setter Property="CornerRadius" Value="12" />
+                <Setter Property="Padding" Value="16,8" />
+                <Setter Property="HeightRequest" Value="36" />
+                <Setter Property="HorizontalOptions" Value="Fill" />
+            </Style>
+
+            <Style x:Key="SecondaryChipButton" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#FFFFFF" />
+                <Setter Property="TextColor" Value="#C49340" />
+                <Setter Property="BorderColor" Value="#C49340" />
+                <Setter Property="BorderWidth" Value="1" />
+                <Setter Property="FontSize" Value="14" />
+                <Setter Property="CornerRadius" Value="12" />
+                <Setter Property="Padding" Value="16,8" />
+                <Setter Property="HeightRequest" Value="36" />
+                <Setter Property="HorizontalOptions" Value="Fill" />
+            </Style>
+
+            <Style x:Key="ListCard" TargetType="Frame">
+                <Setter Property="BackgroundColor" Value="#F7F4EE" />
+                <Setter Property="CornerRadius" Value="12" />
+                <Setter Property="HasShadow" Value="False" />
+                <Setter Property="Padding" Value="16,12" />
+                <Setter Property="BorderColor" Value="Transparent" />
+                <Setter Property="Margin" Value="16,4" />
+            </Style>
+
+            <Style x:Key="DestructiveTextButton" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="Transparent" />
+                <Setter Property="TextColor" Value="{StaticResource Error}" />
+                <Setter Property="FontFamily" Value="OpenSansRegular" />
+                <Setter Property="FontSize" Value="14" />
+                <Setter Property="Padding" Value="0" />
+                <Setter Property="BorderWidth" Value="0" />
+                <Setter Property="CornerRadius" Value="0" />
+                <Setter Property="HorizontalOptions" Value="Start" />
+            </Style>
+
+            <Style x:Key="LoadingIndicator" TargetType="ActivityIndicator">
+                <Setter Property="Color" Value="#C49340" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+            </Style>
+
+            <Style x:Key="ErrorMessage" TargetType="Label">
+                <Setter Property="TextColor" Value="Red" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+            </Style>
+
+            <Style x:Key="EmptyStateContainer" TargetType="StackLayout">
+                <Setter Property="IsVisible" Value="True" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="VerticalOptions" Value="Center" />
+                <Setter Property="Spacing" Value="16" />
+                <Setter Property="Margin" Value="0,80" />
+            </Style>
+
+            <Style x:Key="EmptyStateIcon" TargetType="Label">
+                <Setter Property="FontSize" Value="48" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="Opacity" Value="0.6" />
+            </Style>
+
+            <Style x:Key="EmptyStateTitle" TargetType="Label">
+                <Setter Property="FontSize" Value="20" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource TextPrimaryLight}, Dark={StaticResource TextPrimary}}" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+            </Style>
+
+            <Style x:Key="EmptyStateDescription" TargetType="Label">
+                <Setter Property="FontSize" Value="15" />
+                <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource TextSecondaryLight}, Dark={StaticResource TextSecondary}}" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+            </Style>
+
+            <Style x:Key="ActionBar" TargetType="StackLayout">
+                <Setter Property="VerticalOptions" Value="End" />
+                <Setter Property="BackgroundColor" Value="#FFFFFF" />
+                <Setter Property="Padding" Value="24,16,24,40" />
+            </Style>
+
+            <Style x:Key="ActionButton" TargetType="Border">
+                <Setter Property="BackgroundColor" Value="#F0F0F0" />
+                <Setter Property="Stroke" Value="Transparent" />
+                <Setter Property="WidthRequest" Value="48" />
+                <Setter Property="HeightRequest" Value="48" />
+            </Style>
+
+            <Style x:Key="ActionButtonShape" TargetType="RoundRectangle">
+                <Setter Property="CornerRadius" Value="12" />
+            </Style>
+
+            <Style x:Key="ActionButtonIcon" TargetType="Label">
+                <Setter Property="FontSize" Value="20" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+                <Setter Property="VerticalOptions" Value="Center" />
+            </Style>
+
+            <Style x:Key="MainPage" TargetType="ContentPage">
+                <Setter Property="BackgroundColor" Value="#FFFFFF" />
+            </Style>
+
+            <Style x:Key="HeaderGrid" TargetType="Grid">
+                <Setter Property="Padding" Value="24,60,24,20" />
+                <Setter Property="BackgroundColor" Value="#FFFFFF" />
+            </Style>
+
+            <Style x:Key="BackButton" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="Transparent" />
+                <Setter Property="TextColor" Value="#000000" />
+                <Setter Property="FontSize" Value="17" />
+                <Setter Property="BorderWidth" Value="0" />
+                <Setter Property="HorizontalOptions" Value="Start" />
+            </Style>
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

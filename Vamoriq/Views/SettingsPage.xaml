@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="Vamoriq.Views.SettingsPage"
+             xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ext="clr-namespace:Vamoriq.Extensions"
+             xmlns:loc="clr-namespace:Vamoriq.Extensions"
+             xmlns:resx="clr-namespace:Vamoriq.Resources.Localization"
+             Title="{loc:Localize Settings_Title}"
+             BackgroundColor="{AppThemeBinding Light={StaticResource BackgroundLight}, Dark={StaticResource Background}}"
+             NavigationPage.HasNavigationBar="False">
+
+    <Grid>
+        <ScrollView>
+        <StackLayout Style="{StaticResource MainStackLayout}">
+
+            <Label Text="{loc:Localize Settings_Title}"
+                   Style="{StaticResource HeaderLabel}"
+                   FontSize="34"
+                   FontAttributes="Bold"
+                   Margin="0,0,0,24" />
+
+            <Frame IsVisible="{Binding HasError}"
+                   BackgroundColor="{AppThemeBinding Light=#FFF3F3, Dark=#2A1A1A}"
+                   BorderColor="{StaticResource Error}"
+                   CornerRadius="8"
+                   Padding="12"
+                   Margin="0,0,0,12">
+                <Label Text="{Binding ErrorMessage}"
+                       TextColor="{StaticResource Error}"
+                       FontSize="14" />
+            </Frame>
+
+            <StackLayout Spacing="12" Margin="0,0,0,24">
+                <Label Text="{loc:Localize Settings_Account}"
+                       Style="{StaticResource SectionTitleLabel}" />
+
+                <Frame Style="{StaticResource CardFrame}">
+                    <StackLayout Spacing="16">
+
+                        <StackLayout IsVisible="{Binding IsLoggedIn}" Spacing="4">
+                            <Label Text="{loc:Localize Settings_Email}"
+                                   Style="{StaticResource Callout}" />
+                            <Label Text="{Binding UserEmail}"
+                                   Style="{StaticResource Body}"
+                                   FontAttributes="Bold" />
+                        </StackLayout>
+
+                        <Button Text="{loc:Localize Settings_SignIn}"
+                                Command="{Binding SignInCommand}"
+                                Style="{StaticResource GenerateButton}"
+                                IsVisible="{Binding IsLoggedIn, Converter={StaticResource InverseBoolConverter}}"
+                                Margin="0,8,0,0" />
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+
+            <StackLayout Spacing="12" Margin="0,0,0,24">
+                <Label Text="{loc:Localize Settings_Preferences}"
+                       Style="{StaticResource SectionTitleLabel}" />
+
+                <Frame Style="{StaticResource CardFrame}">
+                    <StackLayout Spacing="20">
+
+                        <StackLayout Spacing="8">
+                            <Label Text="{loc:Localize Settings_Theme}"
+                                   Style="{StaticResource Body}"
+                                   FontAttributes="Bold" />
+                            <Grid ColumnDefinitions="*,*" ColumnSpacing="12" Margin="0,8,0,0">
+
+                                <Border Grid.Column="0"
+                                        Stroke="{StaticResource Primary}"
+                                        StrokeThickness="1.5"
+                                        BackgroundColor="Transparent"
+                                        Padding="20,8"
+                                        VerticalOptions="Center">
+                                    <Border.StrokeShape>
+                                        <RoundRectangle CornerRadius="20" />
+                                    </Border.StrokeShape>
+                                    <Border.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding SetThemeCommand}"
+                                                              CommandParameter="Light" />
+                                    </Border.GestureRecognizers>
+                                    <Label Text="{loc:Localize Settings_Light}"
+                                           TextColor="{StaticResource Primary}"
+                                           FontSize="14"
+                                           FontAttributes="Bold"
+                                           HorizontalOptions="Center"
+                                           VerticalOptions="Center" />
+                                </Border>
+
+                                <Border Grid.Column="1"
+                                        Stroke="{StaticResource Primary}"
+                                        StrokeThickness="1.5"
+                                        BackgroundColor="Transparent"
+                                        Padding="20,8"
+                                        VerticalOptions="Center">
+                                    <Border.StrokeShape>
+                                        <RoundRectangle CornerRadius="20" />
+                                    </Border.StrokeShape>
+                                    <Border.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding SetThemeCommand}"
+                                                              CommandParameter="Dark" />
+                                    </Border.GestureRecognizers>
+                                    <Label Text="{loc:Localize Settings_Dark}"
+                                           TextColor="{StaticResource Primary}"
+                                           FontSize="14"
+                                           FontAttributes="Bold"
+                                           HorizontalOptions="Center"
+                                           VerticalOptions="Center" />
+                                </Border>
+                            </Grid>
+                        </StackLayout>
+
+                        <StackLayout Spacing="8" Margin="0,20,0,0">
+                            <Label Text="{loc:Localize Settings_YourCity}"
+                                   Style="{StaticResource Body}"
+                                   FontAttributes="Bold" />
+                            <Frame Style="{StaticResource InputFieldFrame}">
+                                <Entry Placeholder="{loc:Localize Settings_CityPlaceholder}"
+                                       Text="{Binding City}"
+                                       Style="{StaticResource InputFieldEntry}" />
+                            </Frame>
+                        </StackLayout>
+
+                        <StackLayout Spacing="8" Margin="0,20,0,0">
+                            <Label Text="{loc:Localize Settings_DailyReminder}"
+                                   Style="{StaticResource Body}"
+                                   FontAttributes="Bold" />
+                            <Frame Style="{StaticResource InputFieldFrame}">
+                                <TimePicker Time="{Binding NotificationTime}"
+                                            TextColor="{AppThemeBinding Light={StaticResource TextPrimaryLight}, Dark={StaticResource TextPrimary}}"
+                                            BackgroundColor="Transparent" />
+                            </Frame>
+                        </StackLayout>
+
+                        <StackLayout Spacing="8" Margin="0,20,0,0">
+                            <Label Text="{loc:Localize Settings_Language}"
+                                   Style="{StaticResource Body}"
+                                   FontAttributes="Bold" />
+                            <Frame Style="{StaticResource InputFieldFrame}">
+                                <Picker Title="{loc:Localize Settings_SelectLanguage}"
+                                        ItemsSource="{Binding LanguageOptions}"
+                                        SelectedIndex="{Binding SelectedLanguageIndex}"
+                                        VerticalOptions="Center"
+                                        BackgroundColor="Transparent"
+                                        TextColor="{AppThemeBinding Light={StaticResource TextPrimaryLight}, Dark={StaticResource TextPrimary}}" />
+                            </Frame>
+                        </StackLayout>
+
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+
+            <StackLayout Spacing="12" Margin="0,0,0,24">
+                <Label Text="{loc:Localize Settings_Support}"
+                       Style="{StaticResource SectionTitleLabel}" />
+
+                <Frame Style="{StaticResource CardFrame}" Padding="0">
+                    <StackLayout Spacing="0">
+
+                        <Grid Padding="20,16">
+                            <Grid.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding HelpCommand}" />
+                            </Grid.GestureRecognizers>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+
+                            <Label Grid.Column="0"
+                                   Text="{loc:Localize Settings_HelpFAQ}"
+                                   Style="{StaticResource Body}"
+                                   VerticalOptions="Center" />
+                            <Label Grid.Column="1"
+                                   Text="›"
+                                   FontSize="24"
+                                   TextColor="{AppThemeBinding Light={StaticResource TextSecondaryLight}, Dark={StaticResource TextSecondary}}"
+                                   VerticalOptions="Center" />
+                        </Grid>
+
+                        <BoxView HeightRequest="1" Color="#E0E0E0" Margin="20,0" />
+
+                        <Grid Padding="20,16">
+                            <Grid.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding PrivacyPolicyCommand}" />
+                            </Grid.GestureRecognizers>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+
+                            <Label Grid.Column="0"
+                                   Text="{loc:Localize Settings_PrivacyPolicy}"
+                                   Style="{StaticResource Body}"
+                                   VerticalOptions="Center" />
+                            <Label Grid.Column="1"
+                                   Text="›"
+                                   FontSize="24"
+                                   TextColor="{AppThemeBinding Light={StaticResource TextSecondaryLight}, Dark={StaticResource TextSecondary}}"
+                                   VerticalOptions="Center" />
+                        </Grid>
+
+                        <BoxView HeightRequest="1" Color="#E0E0E0" Margin="20,0" />
+
+                        <Grid Padding="20,16">
+                            <Grid.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding AboutCommand}" />
+                            </Grid.GestureRecognizers>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+
+                            <Label Grid.Column="0"
+                                   Text="{loc:Localize Settings_About}"
+                                   Style="{StaticResource Body}"
+                                   VerticalOptions="Center" />
+                            <Label Grid.Column="1"
+                                   Text="›"
+                                   FontSize="24"
+                                   TextColor="{AppThemeBinding Light={StaticResource TextSecondaryLight}, Dark={StaticResource TextSecondary}}"
+                                   VerticalOptions="Center" />
+                        </Grid>
+
+                        <BoxView HeightRequest="1" Color="#E0E0E0" Margin="20,0" />
+
+                        <Grid Padding="20,16"
+                              IsVisible="{Binding IsLoggedIn}">
+                            <Grid.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding DeleteAccountCommand}" />
+                            </Grid.GestureRecognizers>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+
+                            <StackLayout Grid.Column="0" Spacing="4">
+                                <Label Text="{loc:Localize Settings_DeleteAccount}"
+                                       Style="{StaticResource Body}"
+                                       FontAttributes="Bold"
+                                       TextColor="{StaticResource Error}" />
+                                <Label Text="{loc:Localize Settings_DeleteAccountDescription}"
+                                       Style="{StaticResource Callout}"
+                                       TextColor="{AppThemeBinding Light={StaticResource TextSecondaryLight}, Dark={StaticResource TextSecondary}}"
+                                       LineBreakMode="WordWrap" />
+                            </StackLayout>
+
+                            <Label Grid.Column="1"
+                                   Text="›"
+                                   FontSize="24"
+                                   TextColor="{StaticResource Error}"
+                                   VerticalOptions="Center" />
+                        </Grid>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+
+            <Button Text="{loc:Localize Settings_SignOut}"
+                    Command="{Binding SignOutCommand}"
+                    BackgroundColor="Transparent"
+                    TextColor="#C49340"
+                    BorderColor="#C49340"
+                    BorderWidth="2"
+                    FontAttributes="Bold"
+                    FontFamily="OpenSansSemibold"
+                    CornerRadius="12"
+                    HeightRequest="56"
+                    IsVisible="{Binding IsLoggedIn}"
+                    Margin="0,0,0,16" />
+
+            <Label Text="{Binding AppVersion, StringFormat='Version {0}'}"
+                   Style="{StaticResource Caption1}"
+                   HorizontalOptions="Center" />
+
+        </StackLayout>
+        </ScrollView>
+
+        <Grid IsVisible="{Binding IsBusy}" BackgroundColor="#80000000" InputTransparent="False">
+            <ActivityIndicator IsRunning="True"
+                               Color="#C49340"
+                               WidthRequest="56"
+                               HeightRequest="56"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center" />
+        </Grid>
+    </Grid>
+</ContentPage>

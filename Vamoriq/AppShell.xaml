@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Vamoriq.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:views="clr-namespace:Vamoriq.Views"
+    xmlns:resx="clr-namespace:Vamoriq.Resources.Localization"
+    xmlns:loc="clr-namespace:Vamoriq.Extensions"
+    Title="Vamoriq"
+    BackgroundColor="{AppThemeBinding Light=#FFFFFF, Dark=#000000}"
+    ForegroundColor="{AppThemeBinding Light=#000000, Dark=#FFFFFF}"
+    FlyoutBehavior="Disabled"
+    Shell.NavBarIsVisible="False">
+
+    <Shell.Resources>
+        <Style x:Key="BaseStyle" TargetType="Element">
+            <Setter Property="Shell.BackgroundColor" Value="{AppThemeBinding Light=#FFFFFF, Dark=#000000}" />
+            <Setter Property="Shell.ForegroundColor" Value="{AppThemeBinding Light=#000000, Dark=#FFFFFF}" />
+            <Setter Property="Shell.TitleColor" Value="{AppThemeBinding Light=#000000, Dark=#FFFFFF}" />
+            <Setter Property="Shell.DisabledColor" Value="{AppThemeBinding Light=#555555, Dark=#8A8A8A}" />
+            <Setter Property="Shell.UnselectedColor" Value="{AppThemeBinding Light=#8A8A8A, Dark=#B3B3B3}" />
+            <Setter Property="Shell.TabBarBackgroundColor" Value="{AppThemeBinding Light=#FFFFFF, Dark=#1C1C1E}" />
+            <Setter Property="Shell.TabBarForegroundColor" Value="#C49340" />
+            <Setter Property="Shell.TabBarUnselectedColor" Value="{AppThemeBinding Light=#8A8A8A, Dark=#8E8E93}" />
+            <Setter Property="Shell.TabBarTitleColor" Value="{AppThemeBinding Light=#000000, Dark=#FFFFFF}" />
+        </Style>
+    </Shell.Resources>
+
+    <ShellContent
+        Title="Welcome"
+        ContentTemplate="{DataTemplate views:MainPage}"
+        Route="Welcome" />
+
+    <ShellContent
+        Title="Auth"
+        ContentTemplate="{DataTemplate views:AuthPage}"
+        Route="Auth" />
+
+    <ShellContent
+        Title="Legal"
+        ContentTemplate="{DataTemplate views:LegalConsentPage}"
+        Route="LegalConsent" />
+
+    <TabBar x:Name="MainTabBar">
+        <ShellContent
+            x:Name="MissionTab"
+            Title="Mission"
+            Icon="{StaticResource HomeIcon}"
+            ContentTemplate="{DataTemplate views:MissionPage}"
+            Route="Mission" />
+
+        <ShellContent
+            x:Name="ProgressTab"
+            Title="Progress"
+            Icon="{StaticResource HistoryIcon}"
+            ContentTemplate="{DataTemplate views:ProgressPage}"
+            Route="Progress" />
+
+        <ShellContent
+            x:Name="SettingsTab"
+            Title="{loc:Localize Settings_Title}"
+            Icon="{StaticResource SupportIcon}"
+            ContentTemplate="{DataTemplate views:SettingsPage}"
+            Route="Settings" />
+    </TabBar>
+
+</Shell>

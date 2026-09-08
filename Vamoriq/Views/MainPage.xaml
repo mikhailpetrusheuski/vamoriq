@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="Vamoriq.Views.MainPage"
+             xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:Vamoriq.ViewModels"
+             xmlns:resources="clr-namespace:Vamoriq.Resources"
+             xmlns:loc="clr-namespace:Vamoriq.Extensions"
+             Title="{loc:Localize AppName}"
+             BackgroundColor="{AppThemeBinding Light=#FFFFFF, Dark=#000000}">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="DisclaimerText" TargetType="Label">
+                <Setter Property="FontSize" Value="12" />
+                <Setter Property="TextColor" Value="{AppThemeBinding Light=#000000, Dark=#FFFFFF}" />
+                <Setter Property="Opacity" Value="0.6" />
+                <Setter Property="HorizontalOptions" Value="Center" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.BindingContext>
+        <viewmodels:MainViewModel />
+    </ContentPage.BindingContext>
+
+    <Grid>
+        <ScrollView Padding="{StaticResource PagePadding}">
+            <VerticalStackLayout Spacing="0">
+
+                <Ellipse Fill="{StaticResource Primary}"
+                         WidthRequest="5"
+                         HeightRequest="5"
+                         Opacity="0.10"
+                         HorizontalOptions="End"
+                         Margin="0,0,40,0"
+                         InputTransparent="True" />
+
+                <StackLayout HorizontalOptions="Center" Spacing="12" Margin="0,0,0,24">
+                    <Image Source="brand_icon.png"
+                           HeightRequest="48"
+                           WidthRequest="48"
+                           Aspect="AspectFit"
+                           HorizontalOptions="Center" />
+
+                    <StackLayout HorizontalOptions="Center" Spacing="2">
+                        <Label Text="{loc:Localize AppName}"
+                               FontSize="20"
+                               FontAttributes="Bold"
+                               TextColor="{AppThemeBinding Light=#000000, Dark=#FFFFFF}"
+                               HorizontalOptions="Center"
+                               HorizontalTextAlignment="Center" />
+                        <Label Text="{loc:Localize Welcome_Subtitle}"
+                               FontSize="12"
+                               TextColor="{AppThemeBinding Light=#000000, Dark=#FFFFFF}"
+                               HorizontalOptions="Center"
+                               HorizontalTextAlignment="Center" />
+                    </StackLayout>
+                </StackLayout>
+
+                <StackLayout HorizontalOptions="Center" Spacing="14" Margin="0,0,0,28">
+                    <Label Text="{loc:Localize Welcome_AppTitle}"
+                           Style="{StaticResource TitleText}"
+                           HorizontalOptions="Center"
+                           HorizontalTextAlignment="Center" />
+
+                    <Label Text="{loc:Localize Welcome_AppDescription}"
+                           Style="{StaticResource BodyText}"
+                           HorizontalOptions="Center"
+                           HorizontalTextAlignment="Center"
+                           LineHeight="1.4"
+                           Margin="16,0" />
+
+                    <VerticalStackLayout Spacing="6" HorizontalOptions="Center">
+                        <Label Text="{loc:Localize Welcome_Bullet1_Mission}"
+                               Style="{StaticResource BodyText}"
+                               HorizontalOptions="Center"
+                               HorizontalTextAlignment="Center" />
+                        <Label Text="{loc:Localize Welcome_Bullet2_Mission}"
+                               Style="{StaticResource BodyText}"
+                               HorizontalOptions="Center"
+                               HorizontalTextAlignment="Center" />
+                        <Label Text="{loc:Localize Welcome_Bullet3_Mission}"
+                               Style="{StaticResource BodyText}"
+                               HorizontalOptions="Center"
+                               HorizontalTextAlignment="Center" />
+                    </VerticalStackLayout>
+                </StackLayout>
+
+                <VerticalStackLayout Spacing="12" Margin="0,0,0,16">
+                    <Button Text="{loc:Localize ContinueWithGoogle}"
+                            Style="{StaticResource AuthProviderButton}"
+                            Command="{Binding ContinueWithGoogleCommand}" />
+
+                    <Button Text="{loc:Localize ContinueWithApple}"
+                            Style="{StaticResource AuthProviderButton}"
+                            Command="{Binding ContinueWithAppleCommand}"
+                            IsVisible="{OnPlatform iOS=True, Default=False}" />
+                </VerticalStackLayout>
+
+                <Label Text="{loc:Localize Welcome_DailyChallenge}"
+                       Style="{StaticResource DisclaimerText}"
+                       HorizontalOptions="Center"
+                       HorizontalTextAlignment="Center"
+                       Margin="0,0,0,16" />
+
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <Grid IsVisible="{Binding IsBusy}"
+              BackgroundColor="#80000000"
+              InputTransparent="False">
+            <ActivityIndicator IsRunning="True"
+                               Color="#C49340"
+                               WidthRequest="56"
+                               HeightRequest="56"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center" />
+        </Grid>
+    </Grid>
+</ContentPage>

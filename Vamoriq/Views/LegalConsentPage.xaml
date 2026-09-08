@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="Vamoriq.Views.LegalConsentPage"
+             xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:loc="clr-namespace:Vamoriq.Extensions"
+             Title="{loc:Localize LegalConsent_Title}"
+             BackgroundColor="{AppThemeBinding Light=#FFFFFF, Dark=#000000}">
+
+    <ScrollView>
+        <VerticalStackLayout Style="{StaticResource MainStackLayout}" Spacing="24">
+            <StackLayout Spacing="8">
+                <Label Text="{loc:Localize LegalConsent_Title}"
+					   Style="{StaticResource TitleText}"
+					   HorizontalOptions="Start" />
+                <Label Text="{loc:Localize LegalConsent_Description}"
+					   Style="{StaticResource BodyText}"
+					   TextColor="{AppThemeBinding Light={StaticResource TextSecondaryLight}, Dark={StaticResource TextSecondary}}"
+					   LineHeight="1.4" />
+            </StackLayout>
+
+            <Frame Margin="0,8,0,0"
+				   Padding="20"
+				   CornerRadius="20"
+				   HasShadow="False"
+				   BackgroundColor="{AppThemeBinding Light=#F5F5F7, Dark=#1B1B1B}">
+                <VerticalStackLayout Spacing="18">
+                    <Grid ColumnDefinitions="*,Auto" ColumnSpacing="16">
+                        <Label Text="{loc:Localize LegalConsent_AllowAnalytics}"
+							   Style="{StaticResource BodyText}"
+							   VerticalOptions="Center" />
+                        <Switch Grid.Column="1"
+								IsToggled="{Binding AnalyticsConsent}"
+								OnColor="{StaticResource Primary}" />
+                    </Grid>
+
+                    <BoxView HeightRequest="1"
+							 BackgroundColor="{AppThemeBinding Light=#E0E0E0, Dark=#2A2A2A}" />
+
+                    <Grid ColumnDefinitions="*,Auto" ColumnSpacing="16">
+                        <Label Text="{loc:Localize LegalConsent_AllowCrash}"
+							   Style="{StaticResource BodyText}"
+							   VerticalOptions="Center" />
+                        <Switch Grid.Column="1"
+								IsToggled="{Binding CrashConsent}"
+								OnColor="{StaticResource Primary}" />
+                    </Grid>
+                </VerticalStackLayout>
+            </Frame>
+
+            <StackLayout Spacing="12">
+                <Button Text="{loc:Localize LegalConsent_Save}"
+						Style="{StaticResource PrimaryButton}"
+					Command="{Binding SaveCommand}" />
+            </StackLayout>
+
+            <StackLayout Spacing="0" HorizontalOptions="Center">
+                <Button Text="{loc:Localize LegalConsent_PrivacyPolicy}"
+                        Style="{StaticResource TextButton}"
+                        TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Primary}}"
+                        Command="{Binding OpenPrivacyCommand}" />
+                <Button Text="{loc:Localize LegalConsent_TermsOfUse}"
+                        Style="{StaticResource TextButton}"
+                        TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Primary}}"
+                        Command="{Binding OpenTermsCommand}" />
+                <Button Text="{loc:Localize Settings_About}"
+                        Style="{StaticResource TextButton}"
+                        TextColor="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource Primary}}"
+                        Command="{Binding OpenAboutCommand}" />
+            </StackLayout>
+
+            <Label
+				   Text="{loc:Localize LegalConsent_Footer}"
+				   Style="{StaticResource DisclaimerText}"
+				   HorizontalOptions="Center" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
