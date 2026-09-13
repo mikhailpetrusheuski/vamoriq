@@ -10,6 +10,8 @@ conversation, find a quiet corner of a park. One small task a day, with a streak
 
 Cross-platform **.NET MAUI** sample (Android / iOS): Keycloak/OIDC, GraphQL, offline SQLite, AI personalization, 7 languages.
 
+Read the write-up: [I Open-Sourced Vamoriq — The .NET MAUI Boundary That Keeps AI Optional](https://medium.com/@mikhail.petrusheuski/i-open-sourced-vamoriq-the-net-maui-boundary-that-keeps-ai-optional-88d087a94d2f).
+
 Missions come from a curated, localized library and are optionally
 **personalized** by a backend service using the user's city and how many days
 they've been going. Completing a mission captures a short proof (a note and/or
