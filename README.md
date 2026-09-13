@@ -1,9 +1,14 @@
 # Vamoriq
 
-A cross-platform .NET MAUI app (Android / iOS) that gives newcomers to a city
-one small, doable **mission** each day — visit a local market, start a café
-conversation, find a quiet corner of a park — and tracks the streak of days
-they keep it up.
+Daily missions for people new to a city — visit a market, start a café
+conversation, find a quiet corner of a park. One small task a day, with a streak.
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![.NET 9](https://img.shields.io/badge/.NET-9-512BD4)](https://dotnet.microsoft.com/)
+[![MAUI](https://img.shields.io/badge/MAUI-Android%20%7C%20iOS-512BD4)](https://learn.microsoft.com/dotnet/maui/)
+[![Stars](https://img.shields.io/github/stars/mikhailpetrusheuski/vamoriq?style=social)](https://github.com/mikhailpetrusheuski/vamoriq/stargazers)
+
+Cross-platform **.NET MAUI** sample (Android / iOS): Keycloak/OIDC, GraphQL, offline SQLite, AI personalization, 7 languages.
 
 Missions come from a curated, localized library and are optionally
 **personalized** by a backend service using the user's city and how many days
