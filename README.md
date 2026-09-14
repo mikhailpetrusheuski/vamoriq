@@ -8,6 +8,15 @@ conversation, find a quiet corner of a park. One small task a day, with a streak
 [![MAUI](https://img.shields.io/badge/MAUI-Android%20%7C%20iOS-512BD4)](https://learn.microsoft.com/dotnet/maui/)
 [![Stars](https://img.shields.io/github/stars/mikhailpetrusheuski/vamoriq?style=social)](https://github.com/mikhailpetrusheuski/vamoriq/stargazers)
 
+
+<p align="center">
+  <img src="docs/screenshots/welcome.png" alt="Welcome: feel at home in a new city" width="180">
+  <img src="docs/screenshots/today.png" alt="Today's mission card" width="180">
+  <img src="docs/screenshots/mission.png" alt="Mission steps and proof capture" width="180">
+  <img src="docs/screenshots/progress.png" alt="Progress and completed missions" width="180">
+</p>
+
+
 Cross-platform **.NET MAUI** sample (Android / iOS): Keycloak/OIDC, GraphQL, offline SQLite, AI personalization, 7 languages.
 
 Read the write-up: [I Open-Sourced Vamoriq — The .NET MAUI Boundary That Keeps AI Optional](https://medium.com/@mikhail.petrusheuski/i-open-sourced-vamoriq-the-net-maui-boundary-that-keeps-ai-optional-88d087a94d2f).
